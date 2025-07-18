@@ -1,0 +1,1514 @@
+[
+    {
+        "line": "{\"timestamp\":\"2025-05-30T09:32:01.427+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-2\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"ef990e9aeb63e2ac2a2138e0b56d7c76\",\"trace_flags\":\"01\",\"span_id\":\"2878e1e673dbedea\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set-1713434235] Received event result from database: {\\\"EventCommands\\\":[{\\\"Order\\\":1,\\\"CommandID\\\":2,\\\"Description\\\":\\\"\\\",\\\"Message\\\":\\\"Packages per i quali è stato fatto il check-in esportati correttamente!\\\",\\\"Key\\\":null,\\\"OrdinalID\\\":null,\\\"Modal\\\":true,\\\"ParentObjectType\\\":2,\\\"ParentID\\\":null,\\\"DisappearanceType\\\":2,\\\"ExpirationType\\\":0}],\\\"EventCommandsPushRecipients\\\":[],\\\"FileHeader\\\":null,\\\"DeletingFields\\\":null,\\\"DeletingRows\\\":null,\\\"OrderedRows\\\":null,\\\"Fields\\\":null,\\\"FieldsExtendedProperties\\\":null,\\\"FieldControlExtendedProperties\\\":null,\\\"FilePropertiesPermissions\\\":null,\\\"FieldsPermissions\\\":null,\\\"OrdinalFieldsPermissions\\\":null,\\\"CommandsPermissions\\\":null,\\\"FieldsValues\\\":null,\\\"FieldGroups\\\":null,\\\"FieldGroupsPermissions\\\":null,\\\"Sheets\\\":null,\\\"FilePermissions\\\":null,\\\"PivotData\\\":null,\\\"FileExtendedProperties\\\":null,\\\"SheetsExtendedProperties\\\":null,\\\"FieldGroupsExtendedProperties\\\":null,\\\"FieldGroupsChartExtendedProperties\\\":null,\\\"FieldTreesExtendedProperties\\\":null,\\\"CommandsExtendedProperties\\\":null}\",\"context\":\"default\"}",
+        "timestamp": "1748597521427462221",
+        "fields": {
+            "TraceID": "ef990e9aeb63e2ac2a2138e0b56d7c76",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T09:32:01.351+0000\",\"level\":\"WARN\",\"thread\":\"ForkJoinPool-2-worker-1343\",\"mdc\":{\"trace_id\":\"ef990e9aeb63e2ac2a2138e0b56d7c76\",\"trace_flags\":\"01\",\"span_id\":\"2878e1e673dbedea\"},\"logger\":\"it.eresult.commons.storage.models.OmniaStorageKey\",\"message\":\"Detected legacy file path, the result OmniaStorageKey may be incorrect or may not reference any file.\",\"context\":\"default\"}",
+        "timestamp": "1748597521371468648",
+        "fields": {
+            "TraceID": "ef990e9aeb63e2ac2a2138e0b56d7c76",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "warn",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T09:32:00.690+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-2\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"ef990e9aeb63e2ac2a2138e0b56d7c76\",\"trace_flags\":\"01\",\"span_id\":\"2878e1e673dbedea\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_TF_ExecuteEvent @UserName='marco.pistoia', @Password='*****', @RoutineKey='', @InputParameters='{\\\"SessionCode\\\":\\\"60eb1aff-8e15-4813-acb8-a2eaf0289cbb\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":null,\\\"EventType\\\":0,\\\"FolderID\\\":1000000,\\\"FileTypeID\\\":1000111,\\\"FileTypeOrdinalID\\\":1,\\\"MenuElementID\\\":1000004,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":10,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":{\\\"FileListContext\\\":{\\\"FileListParent\\\":null,\\\"Columns\\\":[{\\\"ElementID\\\":1,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":1,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":2,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":2,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":203,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":3,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":4,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":4,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":5,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":5,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":6,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":9,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":7,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":10,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":8,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null}],\\\"FromRecord\\\":1,\\\"ToRecord\\\":20,\\\"ReturnMultipleValues\\\":false,\\\"SearchCriteria\\\":{\\\"SearchCriteriaHeaderID\\\":-1,\\\"FolderID\\\":\\\"1000000\\\",\\\"FileTypeID\\\":\\\"1000111\\\",\\\"FileTypeOrdinalID\\\":\\\"1\\\",\\\"CriteriaExpressionString\\\":\\\"(|1|)\\\",\\\"Criterias\\\":[{\\\"ID\\\":1,\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"MathOperatorID\\\":1,\\\"Value\\\":\\\"1\\\"}]}}},\\\"SelectedItems\\\":[{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000800\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000799\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000798\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000796\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000795\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000793\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000790\\\"}],\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":null}', @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748597520691751315",
+        "fields": {
+            "TraceID": "ef990e9aeb63e2ac2a2138e0b56d7c76",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T09:32:00.690+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-2\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"ef990e9aeb63e2ac2a2138e0b56d7c76\",\"trace_flags\":\"01\",\"span_id\":\"2878e1e673dbedea\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set-1713434235] Executing with args: {\\\"SessionCode\\\":\\\"60eb1aff-8e15-4813-acb8-a2eaf0289cbb\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":null,\\\"EventType\\\":0,\\\"FolderID\\\":1000000,\\\"FileTypeID\\\":1000111,\\\"FileTypeOrdinalID\\\":1,\\\"MenuElementID\\\":1000004,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":10,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":{\\\"FileListContext\\\":{\\\"FileListParent\\\":null,\\\"Columns\\\":[{\\\"ElementID\\\":1,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":1,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":2,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":2,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":203,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":3,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":4,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":4,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":5,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":5,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":6,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":9,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":7,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":10,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":8,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null}],\\\"FromRecord\\\":1,\\\"ToRecord\\\":20,\\\"ReturnMultipleValues\\\":false,\\\"SearchCriteria\\\":{\\\"SearchCriteriaHeaderID\\\":-1,\\\"FolderID\\\":\\\"1000000\\\",\\\"FileTypeID\\\":\\\"1000111\\\",\\\"FileTypeOrdinalID\\\":\\\"1\\\",\\\"CriteriaExpressionString\\\":\\\"(|1|)\\\",\\\"Criterias\\\":[{\\\"ID\\\":1,\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"MathOperatorID\\\":1,\\\"Value\\\":\\\"1\\\"}]}}},\\\"SelectedItems\\\":[{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000800\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000799\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000798\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000796\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000795\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000793\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000790\\\"}],\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":null}\",\"context\":\"default\"}",
+        "timestamp": "1748597520690731008",
+        "fields": {
+            "TraceID": "ef990e9aeb63e2ac2a2138e0b56d7c76",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:34:04.025+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-7\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"fe06e49a63705f0cba171cf9860fe962\",\"trace_flags\":\"01\",\"span_id\":\"d111319929bb3340\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CNAV_NavigationTreeElementsList @UserName='luca.bazzocchi', @Password='*****', @FolderID=1000002, @FileTempID=null, @ParentFieldID=null, @ParentRowID=null, @ParentOrdinalID=null, @ParentFileStateID=null, @LanguageID=2, @ComponentType=0\",\"context\":\"default\"}",
+        "timestamp": "1748590444026013405",
+        "fields": {
+            "TraceID": "fe06e49a63705f0cba171cf9860fe962",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:34:01.869+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-2\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"c4da4dccf05195e056681de13ce333ef\",\"trace_flags\":\"01\",\"span_id\":\"955a7cb7ee2699c9\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CNAV_NavigationTreeElementsList @UserName='luca.bazzocchi', @Password='*****', @FolderID=1000006, @FileTempID=null, @ParentFieldID=null, @ParentRowID=null, @ParentOrdinalID=null, @ParentFileStateID=null, @LanguageID=2, @ComponentType=0\",\"context\":\"default\"}",
+        "timestamp": "1748590441882452579",
+        "fields": {
+            "TraceID": "c4da4dccf05195e056681de13ce333ef",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:34:00.626+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-6\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"ec2df3caf180411f7af2c6a4fec3b5d5\",\"trace_flags\":\"01\",\"span_id\":\"6e357dfa349092f9\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CNAV_NavigationTreeElementsList @UserName='luca.bazzocchi', @Password='*****', @FolderID=520005, @FileTempID=null, @ParentFieldID=null, @ParentRowID=null, @ParentOrdinalID=null, @ParentFileStateID=null, @LanguageID=2, @ComponentType=0\",\"context\":\"default\"}",
+        "timestamp": "1748590440631185309",
+        "fields": {
+            "TraceID": "ec2df3caf180411f7af2c6a4fec3b5d5",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:34:00.506+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-10\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"4f0b3e36f691c7dcbfdab7282f0c8935\",\"trace_flags\":\"01\",\"span_id\":\"c89a1b33ec9bd5fc\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CNAV_NavigationTreeElementsList @UserName='luca.bazzocchi', @Password='*****', @FolderID=520000, @FileTempID=null, @ParentFieldID=null, @ParentRowID=null, @ParentOrdinalID=null, @ParentFileStateID=null, @LanguageID=2, @ComponentType=0\",\"context\":\"default\"}",
+        "timestamp": "1748590440520770209",
+        "fields": {
+            "TraceID": "4f0b3e36f691c7dcbfdab7282f0c8935",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:34:00.358+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-1\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"1c084c0b6025942c1f380bfbe047a5f0\",\"trace_flags\":\"01\",\"span_id\":\"d9d687de9a452be1\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CNAV_NavigationTreeElementsList @UserName='luca.bazzocchi', @Password='*****', @FolderID=1000007, @FileTempID=null, @ParentFieldID=null, @ParentRowID=null, @ParentOrdinalID=null, @ParentFileStateID=null, @LanguageID=2, @ComponentType=0\",\"context\":\"default\"}",
+        "timestamp": "1748590440368867634",
+        "fields": {
+            "TraceID": "1c084c0b6025942c1f380bfbe047a5f0",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:34:00.213+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-8\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"86eb58c99f6f2db70efc5a9d176f5319\",\"trace_flags\":\"01\",\"span_id\":\"44217022b78c4c0a\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CNAV_NavigationTreeElementsList @UserName='luca.bazzocchi', @Password='*****', @FolderID=1000005, @FileTempID=null, @ParentFieldID=null, @ParentRowID=null, @ParentOrdinalID=null, @ParentFileStateID=null, @LanguageID=2, @ComponentType=0\",\"context\":\"default\"}",
+        "timestamp": "1748590440213779754",
+        "fields": {
+            "TraceID": "86eb58c99f6f2db70efc5a9d176f5319",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:34:00.082+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-5\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"355fa7a278033451a16333e44c17dc86\",\"trace_flags\":\"01\",\"span_id\":\"1f9bb66fb891461e\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CNAV_NavigationTreeElementsList @UserName='luca.bazzocchi', @Password='*****', @FolderID=260586, @FileTempID=null, @ParentFieldID=null, @ParentRowID=null, @ParentOrdinalID=null, @ParentFileStateID=null, @LanguageID=2, @ComponentType=0\",\"context\":\"default\"}",
+        "timestamp": "1748590440083322918",
+        "fields": {
+            "TraceID": "355fa7a278033451a16333e44c17dc86",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:33:59.675+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-9\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"3aa6cb0ddd694ba7a7a77e0e56a1f09b\",\"trace_flags\":\"01\",\"span_id\":\"af2d8c091f8678bf\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DNAV_UserTagsList @UserName='luca.bazzocchi', @Password='*****', @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748590439675960785",
+        "fields": {
+            "TraceID": "3aa6cb0ddd694ba7a7a77e0e56a1f09b",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:33:50.891+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-4\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"25147ddac0a1d9438177e2d9a4f89b32\",\"trace_flags\":\"01\",\"span_id\":\"2641746568772d50\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CNAV_NavigationTreeElementsList @UserName='luca.bazzocchi', @Password='*****', @FolderID=null, @FileTempID=null, @ParentFieldID=null, @ParentRowID=null, @ParentOrdinalID=null, @ParentFileStateID=null, @LanguageID=2, @ComponentType=0\",\"context\":\"default\"}",
+        "timestamp": "1748590430892531444",
+        "fields": {
+            "TraceID": "25147ddac0a1d9438177e2d9a4f89b32",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:33:50.791+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-6\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"28d4da36385915de498007e66b62e6c6\",\"trace_flags\":\"01\",\"span_id\":\"dc5e56eb04e23e62\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CNAV_MenuElementsList @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748590430791843172",
+        "fields": {
+            "TraceID": "28d4da36385915de498007e66b62e6c6",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:33:50.764+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-10\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"e47451f3acf4bf661e0e93007cace8ff\",\"trace_flags\":\"01\",\"span_id\":\"0165841735e97b1a\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set-1942349664] Received event result from database: {\\\"EventCommands\\\":[],\\\"EventCommandsPushRecipients\\\":[],\\\"FileHeader\\\":null,\\\"DeletingFields\\\":null,\\\"DeletingRows\\\":null,\\\"OrderedRows\\\":null,\\\"Fields\\\":null,\\\"FieldsExtendedProperties\\\":null,\\\"FieldControlExtendedProperties\\\":null,\\\"FilePropertiesPermissions\\\":null,\\\"FieldsPermissions\\\":null,\\\"OrdinalFieldsPermissions\\\":null,\\\"CommandsPermissions\\\":null,\\\"FieldsValues\\\":null,\\\"FieldGroups\\\":null,\\\"FieldGroupsPermissions\\\":null,\\\"Sheets\\\":null,\\\"FilePermissions\\\":null,\\\"PivotData\\\":null,\\\"FileExtendedProperties\\\":null,\\\"SheetsExtendedProperties\\\":null,\\\"FieldGroupsExtendedProperties\\\":null,\\\"FieldGroupsChartExtendedProperties\\\":null,\\\"FieldTreesExtendedProperties\\\":null,\\\"CommandsExtendedProperties\\\":null}\",\"context\":\"default\"}",
+        "timestamp": "1748590430765106026",
+        "fields": {
+            "TraceID": "e47451f3acf4bf661e0e93007cace8ff",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:33:50.721+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-10\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"e47451f3acf4bf661e0e93007cace8ff\",\"trace_flags\":\"01\",\"span_id\":\"0165841735e97b1a\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_TF_ExecuteEvent @UserName='luca.bazzocchi', @Password='*****', @RoutineKey='', @InputParameters='{\\\"SessionCode\\\":\\\"123ef983-b8f4-4707-8717-7f3c41a0fd22\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":0,\\\"EventType\\\":0,\\\"FolderID\\\":null,\\\"FileTypeID\\\":null,\\\"FileTypeOrdinalID\\\":null,\\\"MenuElementID\\\":null,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":2,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":null,\\\"SelectedItems\\\":null,\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":true}', @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748590430721263651",
+        "fields": {
+            "TraceID": "e47451f3acf4bf661e0e93007cace8ff",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:33:50.720+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-10\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"e47451f3acf4bf661e0e93007cace8ff\",\"trace_flags\":\"01\",\"span_id\":\"0165841735e97b1a\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set-1942349664] Executing with args: {\\\"SessionCode\\\":\\\"123ef983-b8f4-4707-8717-7f3c41a0fd22\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":0,\\\"EventType\\\":0,\\\"FolderID\\\":null,\\\"FileTypeID\\\":null,\\\"FileTypeOrdinalID\\\":null,\\\"MenuElementID\\\":null,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":2,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":null,\\\"SelectedItems\\\":null,\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":true}\",\"context\":\"default\"}",
+        "timestamp": "1748590430721160651",
+        "fields": {
+            "TraceID": "e47451f3acf4bf661e0e93007cace8ff",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:33:50.699+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-10\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"e47451f3acf4bf661e0e93007cace8ff\",\"trace_flags\":\"01\",\"span_id\":\"0165841735e97b1a\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DNAV_RootElement @UserName='luca.bazzocchi', @Password='*****'\",\"context\":\"default\"}",
+        "timestamp": "1748590430699823314",
+        "fields": {
+            "TraceID": "e47451f3acf4bf661e0e93007cace8ff",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:33:50.595+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-5\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"b27bde4e1b43a0f4e26892d2debe7e58\",\"trace_flags\":\"01\",\"span_id\":\"b094891b8d4b78cb\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_DU_SaveUserLoginLog @UserName='luca.bazzocchi', @Password='*****', @LoginDate=null\",\"context\":\"default\"}",
+        "timestamp": "1748590430598109840",
+        "fields": {
+            "TraceID": "b27bde4e1b43a0f4e26892d2debe7e58",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:33:50.421+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-9\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"89f8be06510c4c40312e6d9fc61ec89d\",\"trace_flags\":\"01\",\"span_id\":\"0f84addd4fdd2a15\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DU_UserDetails @UserName='luca.bazzocchi', @Password='*****', @InputParameters='{\\\"QueryString\\\":null,\\\"QueryUserIDList\\\":[],\\\"QueryUserNameList\\\":[\\\"luca.bazzocchi\\\"]}'\",\"context\":\"default\"}",
+        "timestamp": "1748590430423805642",
+        "fields": {
+            "TraceID": "89f8be06510c4c40312e6d9fc61ec89d",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:33:50.379+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-7\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"ab98a89393a49d45ee64233f404543bb\",\"trace_flags\":\"01\",\"span_id\":\"90e3438258e15d05\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set--627841822] Received event result from database: {\\\"EventCommands\\\":[],\\\"EventCommandsPushRecipients\\\":[],\\\"FileHeader\\\":null,\\\"DeletingFields\\\":null,\\\"DeletingRows\\\":null,\\\"OrderedRows\\\":null,\\\"Fields\\\":null,\\\"FieldsExtendedProperties\\\":null,\\\"FieldControlExtendedProperties\\\":null,\\\"FilePropertiesPermissions\\\":null,\\\"FieldsPermissions\\\":null,\\\"OrdinalFieldsPermissions\\\":null,\\\"CommandsPermissions\\\":null,\\\"FieldsValues\\\":null,\\\"FieldGroups\\\":null,\\\"FieldGroupsPermissions\\\":null,\\\"Sheets\\\":null,\\\"FilePermissions\\\":null,\\\"PivotData\\\":null,\\\"FileExtendedProperties\\\":null,\\\"SheetsExtendedProperties\\\":null,\\\"FieldGroupsExtendedProperties\\\":null,\\\"FieldGroupsChartExtendedProperties\\\":null,\\\"FieldTreesExtendedProperties\\\":null,\\\"CommandsExtendedProperties\\\":null}\",\"context\":\"default\"}",
+        "timestamp": "1748590430382611071",
+        "fields": {
+            "TraceID": "ab98a89393a49d45ee64233f404543bb",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:33:50.335+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-7\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"ab98a89393a49d45ee64233f404543bb\",\"trace_flags\":\"01\",\"span_id\":\"90e3438258e15d05\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_TF_ExecuteEvent @UserName='luca.bazzocchi', @Password='*****', @RoutineKey='', @InputParameters='{\\\"SessionCode\\\":\\\"123ef983-b8f4-4707-8717-7f3c41a0fd22\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":0,\\\"EventType\\\":0,\\\"FolderID\\\":null,\\\"FileTypeID\\\":null,\\\"FileTypeOrdinalID\\\":null,\\\"MenuElementID\\\":null,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":26,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":null,\\\"SelectedItems\\\":null,\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":null}', @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748590430341460801",
+        "fields": {
+            "TraceID": "ab98a89393a49d45ee64233f404543bb",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:33:50.335+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-7\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"ab98a89393a49d45ee64233f404543bb\",\"trace_flags\":\"01\",\"span_id\":\"90e3438258e15d05\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set--627841822] Executing with args: {\\\"SessionCode\\\":\\\"123ef983-b8f4-4707-8717-7f3c41a0fd22\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":0,\\\"EventType\\\":0,\\\"FolderID\\\":null,\\\"FileTypeID\\\":null,\\\"FileTypeOrdinalID\\\":null,\\\"MenuElementID\\\":null,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":26,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":null,\\\"SelectedItems\\\":null,\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":null}\",\"context\":\"default\"}",
+        "timestamp": "1748590430341397001",
+        "fields": {
+            "TraceID": "ab98a89393a49d45ee64233f404543bb",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:33:50.318+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-7\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"ab98a89393a49d45ee64233f404543bb\",\"trace_flags\":\"01\",\"span_id\":\"90e3438258e15d05\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DU_CheckAccount @UserName='luca.bazzocchi', @Password='*****', @InputParameters='{\\\"AuthenticationType\\\":3,\\\"FromSSO\\\":false,\\\"UserDetails\\\":{\\\"UUID\\\":\\\"1f8b49d3-304e-43a2-98f9-3c4a803119c5\\\",\\\"Username\\\":\\\"luca.bazzocchi\\\",\\\"Email\\\":\\\"luca.bazzocchi@eresult.it\\\",\\\"LocaleCode\\\":\\\"it\\\",\\\"Name\\\":\\\"Luca\\\",\\\"Surname\\\":\\\"Bazzocchi\\\",\\\"Description\\\":null,\\\"Roles\\\":null}}'\",\"context\":\"default\"}",
+        "timestamp": "1748590430324779072",
+        "fields": {
+            "TraceID": "ab98a89393a49d45ee64233f404543bb",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:33:50.265+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-3\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"005d562a8e63c44ad3ad9c778ed74c5b\",\"trace_flags\":\"01\",\"span_id\":\"29db59879dcc292e\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CS_SystemInfo \",\"context\":\"default\"}",
+        "timestamp": "1748590430265816171",
+        "fields": {
+            "TraceID": "005d562a8e63c44ad3ad9c778ed74c5b",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:32:23.553+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-3\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"c1d38b3a18695fa92536c9fdbaa71f8a\",\"trace_flags\":\"01\",\"span_id\":\"5ceb461e2f57477d\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set-697506834] Received event result from database: {\\\"EventCommands\\\":[{\\\"Order\\\":1,\\\"CommandID\\\":2,\\\"Description\\\":\\\"\\\",\\\"Message\\\":\\\"Packages per i quali è stato fatto il check-in esportati correttamente!\\\",\\\"Key\\\":null,\\\"OrdinalID\\\":null,\\\"Modal\\\":true,\\\"ParentObjectType\\\":2,\\\"ParentID\\\":null,\\\"DisappearanceType\\\":2,\\\"ExpirationType\\\":0}],\\\"EventCommandsPushRecipients\\\":[],\\\"FileHeader\\\":null,\\\"DeletingFields\\\":null,\\\"DeletingRows\\\":null,\\\"OrderedRows\\\":null,\\\"Fields\\\":null,\\\"FieldsExtendedProperties\\\":null,\\\"FieldControlExtendedProperties\\\":null,\\\"FilePropertiesPermissions\\\":null,\\\"FieldsPermissions\\\":null,\\\"OrdinalFieldsPermissions\\\":null,\\\"CommandsPermissions\\\":null,\\\"FieldsValues\\\":null,\\\"FieldGroups\\\":null,\\\"FieldGroupsPermissions\\\":null,\\\"Sheets\\\":null,\\\"FilePermissions\\\":null,\\\"PivotData\\\":null,\\\"FileExtendedProperties\\\":null,\\\"SheetsExtendedProperties\\\":null,\\\"FieldGroupsExtendedProperties\\\":null,\\\"FieldGroupsChartExtendedProperties\\\":null,\\\"FieldTreesExtendedProperties\\\":null,\\\"CommandsExtendedProperties\\\":null}\",\"context\":\"default\"}",
+        "timestamp": "1748590343557858437",
+        "fields": {
+            "TraceID": "c1d38b3a18695fa92536c9fdbaa71f8a",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:32:23.464+0000\",\"level\":\"WARN\",\"thread\":\"ForkJoinPool-2-worker-1338\",\"mdc\":{\"trace_id\":\"c1d38b3a18695fa92536c9fdbaa71f8a\",\"trace_flags\":\"01\",\"span_id\":\"5ceb461e2f57477d\"},\"logger\":\"it.eresult.commons.storage.models.OmniaStorageKey\",\"message\":\"Detected legacy file path, the result OmniaStorageKey may be incorrect or may not reference any file.\",\"context\":\"default\"}",
+        "timestamp": "1748590343484191379",
+        "fields": {
+            "TraceID": "c1d38b3a18695fa92536c9fdbaa71f8a",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "warn",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:32:22.640+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-3\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"c1d38b3a18695fa92536c9fdbaa71f8a\",\"trace_flags\":\"01\",\"span_id\":\"5ceb461e2f57477d\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_TF_ExecuteEvent @UserName='marco.pistoia', @Password='*****', @RoutineKey='', @InputParameters='{\\\"SessionCode\\\":\\\"60eb1aff-8e15-4813-acb8-a2eaf0289cbb\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":null,\\\"EventType\\\":0,\\\"FolderID\\\":1000000,\\\"FileTypeID\\\":1000111,\\\"FileTypeOrdinalID\\\":1,\\\"MenuElementID\\\":1000004,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":10,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":{\\\"FileListContext\\\":{\\\"FileListParent\\\":null,\\\"Columns\\\":[{\\\"ElementID\\\":1,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":1,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":2,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":2,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":203,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":3,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":4,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":4,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":5,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":5,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":6,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":9,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":7,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":10,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":8,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null}],\\\"FromRecord\\\":1,\\\"ToRecord\\\":20,\\\"ReturnMultipleValues\\\":false,\\\"SearchCriteria\\\":{\\\"SearchCriteriaHeaderID\\\":-1,\\\"FolderID\\\":\\\"1000000\\\",\\\"FileTypeID\\\":\\\"1000111\\\",\\\"FileTypeOrdinalID\\\":\\\"1\\\",\\\"CriteriaExpressionString\\\":\\\"(|1|)\\\",\\\"Criterias\\\":[{\\\"ID\\\":1,\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"MathOperatorID\\\":1,\\\"Value\\\":\\\"1\\\"}]}}},\\\"SelectedItems\\\":[{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000800\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000799\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000798\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000796\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000795\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000793\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000790\\\"}],\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":null}', @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748590342641217621",
+        "fields": {
+            "TraceID": "c1d38b3a18695fa92536c9fdbaa71f8a",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:32:22.640+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-3\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"c1d38b3a18695fa92536c9fdbaa71f8a\",\"trace_flags\":\"01\",\"span_id\":\"5ceb461e2f57477d\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set-697506834] Executing with args: {\\\"SessionCode\\\":\\\"60eb1aff-8e15-4813-acb8-a2eaf0289cbb\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":null,\\\"EventType\\\":0,\\\"FolderID\\\":1000000,\\\"FileTypeID\\\":1000111,\\\"FileTypeOrdinalID\\\":1,\\\"MenuElementID\\\":1000004,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":10,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":{\\\"FileListContext\\\":{\\\"FileListParent\\\":null,\\\"Columns\\\":[{\\\"ElementID\\\":1,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":1,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":2,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":2,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":203,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":3,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":4,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":4,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":5,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":5,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":6,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":9,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":7,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":10,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":8,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null}],\\\"FromRecord\\\":1,\\\"ToRecord\\\":20,\\\"ReturnMultipleValues\\\":false,\\\"SearchCriteria\\\":{\\\"SearchCriteriaHeaderID\\\":-1,\\\"FolderID\\\":\\\"1000000\\\",\\\"FileTypeID\\\":\\\"1000111\\\",\\\"FileTypeOrdinalID\\\":\\\"1\\\",\\\"CriteriaExpressionString\\\":\\\"(|1|)\\\",\\\"Criterias\\\":[{\\\"ID\\\":1,\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"MathOperatorID\\\":1,\\\"Value\\\":\\\"1\\\"}]}}},\\\"SelectedItems\\\":[{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000800\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000799\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000798\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000796\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000795\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000793\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000790\\\"}],\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":null}\",\"context\":\"default\"}",
+        "timestamp": "1748590342641131021",
+        "fields": {
+            "TraceID": "c1d38b3a18695fa92536c9fdbaa71f8a",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:17:09.247+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-1\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"e49f59a9aa0853d0d4c8934fc5155f67\",\"trace_flags\":\"01\",\"span_id\":\"c642e8d93b56f231\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set-1877439808] Received event result from database: {\\\"EventCommands\\\":[{\\\"Order\\\":1,\\\"CommandID\\\":2,\\\"Description\\\":\\\"\\\",\\\"Message\\\":\\\"Packages per i quali è stato fatto il check-in esportati correttamente!\\\",\\\"Key\\\":null,\\\"OrdinalID\\\":null,\\\"Modal\\\":true,\\\"ParentObjectType\\\":2,\\\"ParentID\\\":null,\\\"DisappearanceType\\\":2,\\\"ExpirationType\\\":0}],\\\"EventCommandsPushRecipients\\\":[],\\\"FileHeader\\\":null,\\\"DeletingFields\\\":null,\\\"DeletingRows\\\":null,\\\"OrderedRows\\\":null,\\\"Fields\\\":null,\\\"FieldsExtendedProperties\\\":null,\\\"FieldControlExtendedProperties\\\":null,\\\"FilePropertiesPermissions\\\":null,\\\"FieldsPermissions\\\":null,\\\"OrdinalFieldsPermissions\\\":null,\\\"CommandsPermissions\\\":null,\\\"FieldsValues\\\":null,\\\"FieldGroups\\\":null,\\\"FieldGroupsPermissions\\\":null,\\\"Sheets\\\":null,\\\"FilePermissions\\\":null,\\\"PivotData\\\":null,\\\"FileExtendedProperties\\\":null,\\\"SheetsExtendedProperties\\\":null,\\\"FieldGroupsExtendedProperties\\\":null,\\\"FieldGroupsChartExtendedProperties\\\":null,\\\"FieldTreesExtendedProperties\\\":null,\\\"CommandsExtendedProperties\\\":null}\",\"context\":\"default\"}",
+        "timestamp": "1748589429249785052",
+        "fields": {
+            "TraceID": "e49f59a9aa0853d0d4c8934fc5155f67",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:17:09.149+0000\",\"level\":\"WARN\",\"thread\":\"ForkJoinPool-2-worker-1333\",\"mdc\":{\"trace_id\":\"e49f59a9aa0853d0d4c8934fc5155f67\",\"trace_flags\":\"01\",\"span_id\":\"c642e8d93b56f231\"},\"logger\":\"it.eresult.commons.storage.models.OmniaStorageKey\",\"message\":\"Detected legacy file path, the result OmniaStorageKey may be incorrect or may not reference any file.\",\"context\":\"default\"}",
+        "timestamp": "1748589429150557240",
+        "fields": {
+            "TraceID": "e49f59a9aa0853d0d4c8934fc5155f67",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "warn",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:17:08.501+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-1\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"e49f59a9aa0853d0d4c8934fc5155f67\",\"trace_flags\":\"01\",\"span_id\":\"c642e8d93b56f231\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_TF_ExecuteEvent @UserName='marco.pistoia', @Password='*****', @RoutineKey='', @InputParameters='{\\\"SessionCode\\\":\\\"60eb1aff-8e15-4813-acb8-a2eaf0289cbb\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":null,\\\"EventType\\\":0,\\\"FolderID\\\":1000000,\\\"FileTypeID\\\":1000111,\\\"FileTypeOrdinalID\\\":1,\\\"MenuElementID\\\":1000004,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":10,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":{\\\"FileListContext\\\":{\\\"FileListParent\\\":null,\\\"Columns\\\":[{\\\"ElementID\\\":1,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":1,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":2,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":2,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":203,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":3,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":4,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":4,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":5,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":5,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":6,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":9,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":7,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":10,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":8,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null}],\\\"FromRecord\\\":1,\\\"ToRecord\\\":20,\\\"ReturnMultipleValues\\\":false,\\\"SearchCriteria\\\":{\\\"SearchCriteriaHeaderID\\\":-1,\\\"FolderID\\\":\\\"1000000\\\",\\\"FileTypeID\\\":\\\"1000111\\\",\\\"FileTypeOrdinalID\\\":\\\"1\\\",\\\"CriteriaExpressionString\\\":\\\"(|1|)\\\",\\\"Criterias\\\":[{\\\"ID\\\":1,\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"MathOperatorID\\\":1,\\\"Value\\\":\\\"1\\\"}]}}},\\\"SelectedItems\\\":[{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000800\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000799\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000798\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000796\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000795\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000793\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000790\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000788\\\"}],\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":null}', @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748589428502401029",
+        "fields": {
+            "TraceID": "e49f59a9aa0853d0d4c8934fc5155f67",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:17:08.501+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-1\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"e49f59a9aa0853d0d4c8934fc5155f67\",\"trace_flags\":\"01\",\"span_id\":\"c642e8d93b56f231\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set-1877439808] Executing with args: {\\\"SessionCode\\\":\\\"60eb1aff-8e15-4813-acb8-a2eaf0289cbb\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":null,\\\"EventType\\\":0,\\\"FolderID\\\":1000000,\\\"FileTypeID\\\":1000111,\\\"FileTypeOrdinalID\\\":1,\\\"MenuElementID\\\":1000004,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":10,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":{\\\"FileListContext\\\":{\\\"FileListParent\\\":null,\\\"Columns\\\":[{\\\"ElementID\\\":1,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":1,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":2,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":2,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":203,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":3,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":4,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":4,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":5,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":5,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":6,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":9,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":7,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":10,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":8,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null}],\\\"FromRecord\\\":1,\\\"ToRecord\\\":20,\\\"ReturnMultipleValues\\\":false,\\\"SearchCriteria\\\":{\\\"SearchCriteriaHeaderID\\\":-1,\\\"FolderID\\\":\\\"1000000\\\",\\\"FileTypeID\\\":\\\"1000111\\\",\\\"FileTypeOrdinalID\\\":\\\"1\\\",\\\"CriteriaExpressionString\\\":\\\"(|1|)\\\",\\\"Criterias\\\":[{\\\"ID\\\":1,\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"MathOperatorID\\\":1,\\\"Value\\\":\\\"1\\\"}]}}},\\\"SelectedItems\\\":[{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000800\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000799\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000798\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000796\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000795\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000793\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000790\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000788\\\"}],\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":null}\",\"context\":\"default\"}",
+        "timestamp": "1748589428502349129",
+        "fields": {
+            "TraceID": "e49f59a9aa0853d0d4c8934fc5155f67",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:07:02.500+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-1\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"e05e2e98113f65676226d08c7894435a\",\"trace_flags\":\"01\",\"span_id\":\"29f3f477d9c831f9\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set-137921682] Received event result from database: {\\\"EventCommands\\\":[{\\\"Order\\\":1,\\\"CommandID\\\":2,\\\"Description\\\":\\\"\\\",\\\"Message\\\":\\\"Packages per i quali è stato fatto il check-in esportati correttamente!\\\",\\\"Key\\\":null,\\\"OrdinalID\\\":null,\\\"Modal\\\":true,\\\"ParentObjectType\\\":2,\\\"ParentID\\\":null,\\\"DisappearanceType\\\":2,\\\"ExpirationType\\\":0}],\\\"EventCommandsPushRecipients\\\":[],\\\"FileHeader\\\":null,\\\"DeletingFields\\\":null,\\\"DeletingRows\\\":null,\\\"OrderedRows\\\":null,\\\"Fields\\\":null,\\\"FieldsExtendedProperties\\\":null,\\\"FieldControlExtendedProperties\\\":null,\\\"FilePropertiesPermissions\\\":null,\\\"FieldsPermissions\\\":null,\\\"OrdinalFieldsPermissions\\\":null,\\\"CommandsPermissions\\\":null,\\\"FieldsValues\\\":null,\\\"FieldGroups\\\":null,\\\"FieldGroupsPermissions\\\":null,\\\"Sheets\\\":null,\\\"FilePermissions\\\":null,\\\"PivotData\\\":null,\\\"FileExtendedProperties\\\":null,\\\"SheetsExtendedProperties\\\":null,\\\"FieldGroupsExtendedProperties\\\":null,\\\"FieldGroupsChartExtendedProperties\\\":null,\\\"FieldTreesExtendedProperties\\\":null,\\\"CommandsExtendedProperties\\\":null}\",\"context\":\"default\"}",
+        "timestamp": "1748588822500849983",
+        "fields": {
+            "TraceID": "e05e2e98113f65676226d08c7894435a",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:07:02.377+0000\",\"level\":\"WARN\",\"thread\":\"ForkJoinPool-2-worker-1327\",\"mdc\":{\"trace_id\":\"e05e2e98113f65676226d08c7894435a\",\"trace_flags\":\"01\",\"span_id\":\"29f3f477d9c831f9\"},\"logger\":\"it.eresult.commons.storage.models.OmniaStorageKey\",\"message\":\"Detected legacy file path, the result OmniaStorageKey may be incorrect or may not reference any file.\",\"context\":\"default\"}",
+        "timestamp": "1748588822378163114",
+        "fields": {
+            "TraceID": "e05e2e98113f65676226d08c7894435a",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "warn",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:07:02.347+0000\",\"level\":\"DEBUG\",\"thread\":\"ForkJoinPool-1-worker-811\",\"mdc\":{\"trace_id\":\"e05e2e98113f65676226d08c7894435a\",\"trace_flags\":\"01\",\"span_id\":\"29f3f477d9c831f9\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CF_LoadBinaryFileProperties \",\"context\":\"default\"}",
+        "timestamp": "1748588822347399921",
+        "fields": {
+            "TraceID": "e05e2e98113f65676226d08c7894435a",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:07:01.152+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-1\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"e05e2e98113f65676226d08c7894435a\",\"trace_flags\":\"01\",\"span_id\":\"29f3f477d9c831f9\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_TF_ExecuteEvent @UserName='marco.pistoia', @Password='*****', @RoutineKey='', @InputParameters='{\\\"SessionCode\\\":\\\"60eb1aff-8e15-4813-acb8-a2eaf0289cbb\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":null,\\\"EventType\\\":0,\\\"FolderID\\\":1000000,\\\"FileTypeID\\\":1000111,\\\"FileTypeOrdinalID\\\":1,\\\"MenuElementID\\\":1000004,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":10,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":{\\\"FileListContext\\\":{\\\"FileListParent\\\":null,\\\"Columns\\\":[{\\\"ElementID\\\":1,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":1,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":2,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":2,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":203,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":3,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":4,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":4,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":5,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":5,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":6,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":9,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":7,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":10,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":8,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null}],\\\"FromRecord\\\":1,\\\"ToRecord\\\":20,\\\"ReturnMultipleValues\\\":false,\\\"SearchCriteria\\\":{\\\"SearchCriteriaHeaderID\\\":-1,\\\"FolderID\\\":\\\"1000000\\\",\\\"FileTypeID\\\":\\\"1000111\\\",\\\"FileTypeOrdinalID\\\":\\\"1\\\",\\\"CriteriaExpressionString\\\":\\\"(|1|)\\\",\\\"Criterias\\\":[{\\\"ID\\\":1,\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"MathOperatorID\\\":1,\\\"Value\\\":\\\"1\\\"}]}}},\\\"SelectedItems\\\":[{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000800\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000799\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000798\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000796\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000795\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000793\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000790\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000788\\\"}],\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":null}', @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748588821153972442",
+        "fields": {
+            "TraceID": "e05e2e98113f65676226d08c7894435a",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:07:01.152+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-1\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"e05e2e98113f65676226d08c7894435a\",\"trace_flags\":\"01\",\"span_id\":\"29f3f477d9c831f9\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set-137921682] Executing with args: {\\\"SessionCode\\\":\\\"60eb1aff-8e15-4813-acb8-a2eaf0289cbb\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":null,\\\"EventType\\\":0,\\\"FolderID\\\":1000000,\\\"FileTypeID\\\":1000111,\\\"FileTypeOrdinalID\\\":1,\\\"MenuElementID\\\":1000004,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":10,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":{\\\"FileListContext\\\":{\\\"FileListParent\\\":null,\\\"Columns\\\":[{\\\"ElementID\\\":1,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":1,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":2,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":2,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":203,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":3,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":4,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":4,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":5,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":5,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":6,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":9,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":7,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":10,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":8,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null}],\\\"FromRecord\\\":1,\\\"ToRecord\\\":20,\\\"ReturnMultipleValues\\\":false,\\\"SearchCriteria\\\":{\\\"SearchCriteriaHeaderID\\\":-1,\\\"FolderID\\\":\\\"1000000\\\",\\\"FileTypeID\\\":\\\"1000111\\\",\\\"FileTypeOrdinalID\\\":\\\"1\\\",\\\"CriteriaExpressionString\\\":\\\"(|1|)\\\",\\\"Criterias\\\":[{\\\"ID\\\":1,\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"MathOperatorID\\\":1,\\\"Value\\\":\\\"1\\\"}]}}},\\\"SelectedItems\\\":[{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000800\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000799\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000798\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000796\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000795\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000793\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000790\\\"},{\\\"ItemType\\\":2,\\\"ItemID1\\\":1000111,\\\"ItemID2\\\":\\\"1000111 - 0010000788\\\"}],\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":null}\",\"context\":\"default\"}",
+        "timestamp": "1748588821153583438",
+        "fields": {
+            "TraceID": "e05e2e98113f65676226d08c7894435a",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:06:40.890+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-6\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"1e282485ed45cfd62a5fe1c1b1850de7\",\"trace_flags\":\"01\",\"span_id\":\"bd6a659f22a36c04\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DF_FilesList @UserName='marco.pistoia', @Password='*****', @InputParameters='{\\\"FromRecord\\\":1,\\\"ToRecord\\\":20,\\\"ReturnMultipleValues\\\":false,\\\"SearchCriterias\\\":[{\\\"SearchCriteriaHeaderID\\\":-1,\\\"FolderID\\\":1000000,\\\"FileTypeID\\\":1000111,\\\"FileTypeOrdinalID\\\":1,\\\"CriteriaExpressionString\\\":\\\"(|1|)\\\",\\\"Criterias\\\":[{\\\"ID\\\":1,\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"MathOperatorID\\\":1,\\\"Value\\\":\\\"1\\\"}]}],\\\"FilesView\\\":{\\\"Columns\\\":[{\\\"ElementID\\\":1,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":1,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":2,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":2,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":203,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":3,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":4,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":4,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":5,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":5,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":6,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":9,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":7,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":10,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":8,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null}]},\\\"FileListParent\\\":null}', @FilesViewType=0, @ReturnFilesNumber=true, @ReturnTags=false, @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748588800890779306",
+        "fields": {
+            "TraceID": "1e282485ed45cfd62a5fe1c1b1850de7",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T07:06:40.722+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-2\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"e4b310062c17114fe97ecd9cd53a2ac3\",\"trace_flags\":\"01\",\"span_id\":\"286389afdcdecc49\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DF_FilesView @UserName='marco.pistoia', @Password='*****', @FolderID=1000000, @FileTypeID=1000111, @FileTypeOrdinalID=1, @FileTempID=null, @ParentFieldID=null, @ParentRowID=null, @ParentOrdinalID=null, @ParentFileStateID=null, @LanguageID=2, @ComponentType=0\",\"context\":\"default\"}",
+        "timestamp": "1748588800725067612",
+        "fields": {
+            "TraceID": "e4b310062c17114fe97ecd9cd53a2ac3",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:28.366+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-6\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"dd62b7a670066fc9f1747ae043f36f3b\",\"trace_flags\":\"01\",\"span_id\":\"740c1025f2624c15\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DF_FilesList @UserName='marco.pistoia', @Password='*****', @InputParameters='{\\\"FromRecord\\\":1,\\\"ToRecord\\\":20,\\\"ReturnMultipleValues\\\":false,\\\"SearchCriterias\\\":[{\\\"SearchCriteriaHeaderID\\\":0,\\\"FolderID\\\":1000000,\\\"FileTypeID\\\":1000111,\\\"FileTypeOrdinalID\\\":1,\\\"CriteriaExpressionString\\\":\\\"(|1|)\\\",\\\"Criterias\\\":[{\\\"ID\\\":1,\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"MathOperatorID\\\":1,\\\"Value\\\":\\\"1\\\"}]}],\\\"FilesView\\\":{\\\"Columns\\\":[{\\\"ElementID\\\":1,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":1,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":2,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":2,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":203,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":3,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":4,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":4,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":5,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":5,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":6,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":9,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":7,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":10,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":8,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null}]},\\\"FileListParent\\\":null}', @FilesViewType=0, @ReturnFilesNumber=true, @ReturnTags=false, @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748587828367257336",
+        "fields": {
+            "TraceID": "dd62b7a670066fc9f1747ae043f36f3b",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:28.324+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-3\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"127284b17fbb3a057b79df75bdb0391a\",\"trace_flags\":\"01\",\"span_id\":\"f43b6734c53153c2\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_SNAV_CodeCriteria @InputParameters='{\\\"FileTypeID\\\":\\\"1000111\\\",\\\"Criterias\\\":[{\\\"ID\\\":1,\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"MathOperatorID\\\":null,\\\"SearchCriteriaString\\\":\\\"1\\\",\\\"Value\\\":null,\\\"Name\\\":\\\"Major Version\\\",\\\"Description\\\":\\\"Major Version\\\",\\\"FieldData\\\":{\\\"Format\\\":null,\\\"DataTypeID\\\":3}}]}'\",\"context\":\"default\"}",
+        "timestamp": "1748587828324893578",
+        "fields": {
+            "TraceID": "127284b17fbb3a057b79df75bdb0391a",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:22.301+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-2\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"0fb3707936d7703d6a1553eda8c9e131\",\"trace_flags\":\"01\",\"span_id\":\"f9a83d76d49cdbdb\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DF_FilesList @UserName='marco.pistoia', @Password='*****', @InputParameters='{\\\"FromRecord\\\":1,\\\"ToRecord\\\":20,\\\"ReturnMultipleValues\\\":false,\\\"SearchCriterias\\\":[{\\\"SearchCriteriaHeaderID\\\":0,\\\"FolderID\\\":1000000,\\\"FileTypeID\\\":1000111,\\\"FileTypeOrdinalID\\\":1,\\\"CriteriaExpressionString\\\":null,\\\"Criterias\\\":[]}],\\\"FilesView\\\":{\\\"Columns\\\":[{\\\"ElementID\\\":1,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":1,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":2,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":2,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":203,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":3,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":4,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":4,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":5,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":5,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":6,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":9,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":7,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":10,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":8,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null}]},\\\"FileListParent\\\":null}', @FilesViewType=0, @ReturnFilesNumber=true, @ReturnTags=false, @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748587822301635036",
+        "fields": {
+            "TraceID": "0fb3707936d7703d6a1553eda8c9e131",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:22.112+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-10\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"3519c571e29ebbf8719bf37da64fa99c\",\"trace_flags\":\"01\",\"span_id\":\"417264ca7714e697\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DF_FilesView @UserName='marco.pistoia', @Password='*****', @FolderID=1000000, @FileTypeID=1000111, @FileTypeOrdinalID=1, @FileTempID=null, @ParentFieldID=null, @ParentRowID=null, @ParentOrdinalID=null, @ParentFileStateID=null, @LanguageID=2, @ComponentType=0\",\"context\":\"default\"}",
+        "timestamp": "1748587822123685302",
+        "fields": {
+            "TraceID": "3519c571e29ebbf8719bf37da64fa99c",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:11.003+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-6\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"fcba5b346942630f93c8b103a803c3f2\",\"trace_flags\":\"01\",\"span_id\":\"c496e34619a4f8f9\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DF_FilesList @UserName='marco.pistoia', @Password='*****', @InputParameters='{\\\"FromRecord\\\":1,\\\"ToRecord\\\":20,\\\"ReturnMultipleValues\\\":false,\\\"SearchCriterias\\\":[{\\\"SearchCriteriaHeaderID\\\":0,\\\"FolderID\\\":1000000,\\\"FileTypeID\\\":1000111,\\\"FileTypeOrdinalID\\\":1,\\\"CriteriaExpressionString\\\":null,\\\"Criterias\\\":[]}],\\\"FilesView\\\":{\\\"Columns\\\":[{\\\"ElementID\\\":1,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":1,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":2,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":2,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":203,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":3,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":4,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":4,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":5,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":5,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":6,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":9,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":7,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":10,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":8,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null}]},\\\"FileListParent\\\":null}', @FilesViewType=0, @ReturnFilesNumber=true, @ReturnTags=false, @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748587811003815991",
+        "fields": {
+            "TraceID": "fcba5b346942630f93c8b103a803c3f2",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:08.731+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-9\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"ab32b9ee7b19c0d81ff28fd3bcf72479\",\"trace_flags\":\"01\",\"span_id\":\"f01c908bde369212\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CNAV_NavigationTreeElementsList @UserName='marco.pistoia', @Password='*****', @FolderID=1000000, @FileTempID=null, @ParentFieldID=null, @ParentRowID=null, @ParentOrdinalID=null, @ParentFileStateID=null, @LanguageID=2, @ComponentType=0\",\"context\":\"default\"}",
+        "timestamp": "1748587808732931472",
+        "fields": {
+            "TraceID": "ab32b9ee7b19c0d81ff28fd3bcf72479",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:06.449+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-4\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"0d0a224d5f26d7761dce5d5bdc68f0a7\",\"trace_flags\":\"01\",\"span_id\":\"c090c195002ee6a5\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CFT_FieldValuesList @UserName='marco.pistoia', @Password='*****', @FileTypeID=1000115, @FileTempID=null, @FieldID=4, @RowID=null, @OrdinalID=null, @QueryFilter=null\",\"context\":\"default\"}",
+        "timestamp": "1748587806450290782",
+        "fields": {
+            "TraceID": "0d0a224d5f26d7761dce5d5bdc68f0a7",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:06.298+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-6\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"6c090e93a746868acbf09f2fe948f6bf\",\"trace_flags\":\"01\",\"span_id\":\"9149d493f96a8a94\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DNAV_UserPagesList @UserName='marco.pistoia', @Password='*****'\",\"context\":\"default\"}",
+        "timestamp": "1748587806299324821",
+        "fields": {
+            "TraceID": "6c090e93a746868acbf09f2fe948f6bf",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:05.947+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-1\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"421ebfbe3b8a3d7b37318f48d4c3f37e\",\"trace_flags\":\"01\",\"span_id\":\"cb65f44e7d565875\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CNAV_NavigationTreeElementsList @UserName='marco.pistoia', @Password='*****', @FolderID=null, @FileTempID=null, @ParentFieldID=null, @ParentRowID=null, @ParentOrdinalID=null, @ParentFileStateID=null, @LanguageID=2, @ComponentType=0\",\"context\":\"default\"}",
+        "timestamp": "1748587805957183657",
+        "fields": {
+            "TraceID": "421ebfbe3b8a3d7b37318f48d4c3f37e",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:05.812+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-5\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"538e187b9800e18036034c86b030c09c\",\"trace_flags\":\"01\",\"span_id\":\"35bff201cf4c4543\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CNAV_MenuElementsList @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748587805813356474",
+        "fields": {
+            "TraceID": "538e187b9800e18036034c86b030c09c",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:05.792+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-2\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"96e4ea98469e64ed48704b7dc088aa96\",\"trace_flags\":\"01\",\"span_id\":\"3ef72de73064680c\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set-552508138] Received event result from database: {\\\"EventCommands\\\":[],\\\"EventCommandsPushRecipients\\\":[],\\\"FileHeader\\\":null,\\\"DeletingFields\\\":null,\\\"DeletingRows\\\":null,\\\"OrderedRows\\\":null,\\\"Fields\\\":null,\\\"FieldsExtendedProperties\\\":null,\\\"FieldControlExtendedProperties\\\":null,\\\"FilePropertiesPermissions\\\":null,\\\"FieldsPermissions\\\":null,\\\"OrdinalFieldsPermissions\\\":null,\\\"CommandsPermissions\\\":null,\\\"FieldsValues\\\":null,\\\"FieldGroups\\\":null,\\\"FieldGroupsPermissions\\\":null,\\\"Sheets\\\":null,\\\"FilePermissions\\\":null,\\\"PivotData\\\":null,\\\"FileExtendedProperties\\\":null,\\\"SheetsExtendedProperties\\\":null,\\\"FieldGroupsExtendedProperties\\\":null,\\\"FieldGroupsChartExtendedProperties\\\":null,\\\"FieldTreesExtendedProperties\\\":null,\\\"CommandsExtendedProperties\\\":null}\",\"context\":\"default\"}",
+        "timestamp": "1748587805792387243",
+        "fields": {
+            "TraceID": "96e4ea98469e64ed48704b7dc088aa96",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:05.755+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-2\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"96e4ea98469e64ed48704b7dc088aa96\",\"trace_flags\":\"01\",\"span_id\":\"3ef72de73064680c\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_TF_ExecuteEvent @UserName='marco.pistoia', @Password='*****', @RoutineKey='', @InputParameters='{\\\"SessionCode\\\":\\\"60eb1aff-8e15-4813-acb8-a2eaf0289cbb\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":0,\\\"EventType\\\":0,\\\"FolderID\\\":null,\\\"FileTypeID\\\":null,\\\"FileTypeOrdinalID\\\":null,\\\"MenuElementID\\\":null,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":2,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":null,\\\"SelectedItems\\\":null,\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":true}', @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748587805755610338",
+        "fields": {
+            "TraceID": "96e4ea98469e64ed48704b7dc088aa96",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:05.755+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-2\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"96e4ea98469e64ed48704b7dc088aa96\",\"trace_flags\":\"01\",\"span_id\":\"3ef72de73064680c\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set-552508138] Executing with args: {\\\"SessionCode\\\":\\\"60eb1aff-8e15-4813-acb8-a2eaf0289cbb\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":0,\\\"EventType\\\":0,\\\"FolderID\\\":null,\\\"FileTypeID\\\":null,\\\"FileTypeOrdinalID\\\":null,\\\"MenuElementID\\\":null,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":2,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":null,\\\"SelectedItems\\\":null,\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":true}\",\"context\":\"default\"}",
+        "timestamp": "1748587805755554637",
+        "fields": {
+            "TraceID": "96e4ea98469e64ed48704b7dc088aa96",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:05.746+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-2\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"96e4ea98469e64ed48704b7dc088aa96\",\"trace_flags\":\"01\",\"span_id\":\"3ef72de73064680c\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DNAV_RootElement @UserName='marco.pistoia', @Password='*****'\",\"context\":\"default\"}",
+        "timestamp": "1748587805746659940",
+        "fields": {
+            "TraceID": "96e4ea98469e64ed48704b7dc088aa96",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:05.658+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-7\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"49b47132301bfb6ab9e4c61681ff3f1a\",\"trace_flags\":\"01\",\"span_id\":\"59e3bdde589861d0\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_DU_SaveUserLoginLog @UserName='marco.pistoia', @Password='*****', @LoginDate=null\",\"context\":\"default\"}",
+        "timestamp": "1748587805659246177",
+        "fields": {
+            "TraceID": "49b47132301bfb6ab9e4c61681ff3f1a",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:05.531+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-4\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"d8681e56a6e6c0e7350687153ad01fbd\",\"trace_flags\":\"01\",\"span_id\":\"b75f95a7f56d9530\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DU_UserDetails @UserName='marco.pistoia', @Password='*****', @InputParameters='{\\\"QueryString\\\":null,\\\"QueryUserIDList\\\":[],\\\"QueryUserNameList\\\":[\\\"marco.pistoia\\\"]}'\",\"context\":\"default\"}",
+        "timestamp": "1748587805532877486",
+        "fields": {
+            "TraceID": "d8681e56a6e6c0e7350687153ad01fbd",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:05.498+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-3\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"e8dda343b3ed11b180aee1653b5a79c3\",\"trace_flags\":\"01\",\"span_id\":\"03b1cad9647d84a9\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set--686658493] Received event result from database: {\\\"EventCommands\\\":[],\\\"EventCommandsPushRecipients\\\":[],\\\"FileHeader\\\":null,\\\"DeletingFields\\\":null,\\\"DeletingRows\\\":null,\\\"OrderedRows\\\":null,\\\"Fields\\\":null,\\\"FieldsExtendedProperties\\\":null,\\\"FieldControlExtendedProperties\\\":null,\\\"FilePropertiesPermissions\\\":null,\\\"FieldsPermissions\\\":null,\\\"OrdinalFieldsPermissions\\\":null,\\\"CommandsPermissions\\\":null,\\\"FieldsValues\\\":null,\\\"FieldGroups\\\":null,\\\"FieldGroupsPermissions\\\":null,\\\"Sheets\\\":null,\\\"FilePermissions\\\":null,\\\"PivotData\\\":null,\\\"FileExtendedProperties\\\":null,\\\"SheetsExtendedProperties\\\":null,\\\"FieldGroupsExtendedProperties\\\":null,\\\"FieldGroupsChartExtendedProperties\\\":null,\\\"FieldTreesExtendedProperties\\\":null,\\\"CommandsExtendedProperties\\\":null}\",\"context\":\"default\"}",
+        "timestamp": "1748587805499346317",
+        "fields": {
+            "TraceID": "e8dda343b3ed11b180aee1653b5a79c3",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:05.462+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-3\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"e8dda343b3ed11b180aee1653b5a79c3\",\"trace_flags\":\"01\",\"span_id\":\"03b1cad9647d84a9\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_TF_ExecuteEvent @UserName='marco.pistoia', @Password='*****', @RoutineKey='', @InputParameters='{\\\"SessionCode\\\":\\\"60eb1aff-8e15-4813-acb8-a2eaf0289cbb\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":0,\\\"EventType\\\":0,\\\"FolderID\\\":null,\\\"FileTypeID\\\":null,\\\"FileTypeOrdinalID\\\":null,\\\"MenuElementID\\\":null,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":26,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":null,\\\"SelectedItems\\\":null,\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":null}', @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748587805462544912",
+        "fields": {
+            "TraceID": "e8dda343b3ed11b180aee1653b5a79c3",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:05.461+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-3\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"e8dda343b3ed11b180aee1653b5a79c3\",\"trace_flags\":\"01\",\"span_id\":\"03b1cad9647d84a9\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set--686658493] Executing with args: {\\\"SessionCode\\\":\\\"60eb1aff-8e15-4813-acb8-a2eaf0289cbb\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":0,\\\"EventType\\\":0,\\\"FolderID\\\":null,\\\"FileTypeID\\\":null,\\\"FileTypeOrdinalID\\\":null,\\\"MenuElementID\\\":null,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":26,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":null,\\\"SelectedItems\\\":null,\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":null}\",\"context\":\"default\"}",
+        "timestamp": "1748587805462448811",
+        "fields": {
+            "TraceID": "e8dda343b3ed11b180aee1653b5a79c3",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:05.451+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-3\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"e8dda343b3ed11b180aee1653b5a79c3\",\"trace_flags\":\"01\",\"span_id\":\"03b1cad9647d84a9\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DU_CheckAccount @UserName='marco.pistoia', @Password='*****', @InputParameters='{\\\"AuthenticationType\\\":3,\\\"FromSSO\\\":false,\\\"UserDetails\\\":{\\\"UUID\\\":\\\"ade647be-d574-4189-964f-f119d55340e1\\\",\\\"Username\\\":\\\"marco.pistoia\\\",\\\"Email\\\":\\\"marco.pistoia@eresult.it\\\",\\\"LocaleCode\\\":\\\"en\\\",\\\"Name\\\":\\\"Marco\\\",\\\"Surname\\\":\\\"Pistoia\\\",\\\"Description\\\":null,\\\"Roles\\\":null}}'\",\"context\":\"default\"}",
+        "timestamp": "1748587805451864094",
+        "fields": {
+            "TraceID": "e8dda343b3ed11b180aee1653b5a79c3",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:50:05.256+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-6\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"9a3858e3461c2fe83519fce236727156\",\"trace_flags\":\"01\",\"span_id\":\"803952c5e52ba306\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CS_SystemInfo \",\"context\":\"default\"}",
+        "timestamp": "1748587805256561844",
+        "fields": {
+            "TraceID": "9a3858e3461c2fe83519fce236727156",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:26.719+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-5\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"cd0a4960c74f410040bfd495d927e7e6\",\"trace_flags\":\"01\",\"span_id\":\"970a937ed5930577\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DF_FilesList @UserName='marco.pistoia', @Password='*****', @InputParameters='{\\\"FromRecord\\\":1,\\\"ToRecord\\\":20,\\\"ReturnMultipleValues\\\":false,\\\"SearchCriterias\\\":[{\\\"SearchCriteriaHeaderID\\\":0,\\\"FolderID\\\":1000000,\\\"FileTypeID\\\":1000111,\\\"FileTypeOrdinalID\\\":1,\\\"CriteriaExpressionString\\\":\\\"(|1|)\\\",\\\"Criterias\\\":[{\\\"ID\\\":1,\\\"ElementID\\\":2,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"MathOperatorID\\\":1,\\\"Value\\\":\\\"false\\\"}]}],\\\"FilesView\\\":{\\\"Columns\\\":[{\\\"ElementID\\\":1,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":1,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":2,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":2,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":203,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":3,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":4,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":4,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":5,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":5,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":6,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":9,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":7,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":10,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":8,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null}]},\\\"FileListParent\\\":null}', @FilesViewType=0, @ReturnFilesNumber=true, @ReturnTags=false, @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748586446719699652",
+        "fields": {
+            "TraceID": "cd0a4960c74f410040bfd495d927e7e6",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:26.615+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-9\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"ad1a977d0e750c47bbda1339a8fa7b92\",\"trace_flags\":\"01\",\"span_id\":\"b7be07244994971d\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_SNAV_CodeCriteria @InputParameters='{\\\"FileTypeID\\\":\\\"1000111\\\",\\\"Criterias\\\":[{\\\"ID\\\":1,\\\"ElementID\\\":2,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"MathOperatorID\\\":null,\\\"SearchCriteriaString\\\":\\\"false\\\",\\\"Value\\\":null,\\\"Name\\\":\\\"Omnia standard\\\",\\\"Description\\\":\\\"Omnia standard\\\",\\\"FieldData\\\":{\\\"Format\\\":null,\\\"DataTypeID\\\":2}}]}'\",\"context\":\"default\"}",
+        "timestamp": "1748586446617337491",
+        "fields": {
+            "TraceID": "ad1a977d0e750c47bbda1339a8fa7b92",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:19.361+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-3\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"2c6588b2e4da7769b0c28302a9499ead\",\"trace_flags\":\"01\",\"span_id\":\"966bf3987ae6983f\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DF_FilesList @UserName='marco.pistoia', @Password='*****', @InputParameters='{\\\"FromRecord\\\":1,\\\"ToRecord\\\":20,\\\"ReturnMultipleValues\\\":false,\\\"SearchCriterias\\\":[{\\\"SearchCriteriaHeaderID\\\":0,\\\"FolderID\\\":1000000,\\\"FileTypeID\\\":1000111,\\\"FileTypeOrdinalID\\\":1,\\\"CriteriaExpressionString\\\":null,\\\"Criterias\\\":[]}],\\\"FilesView\\\":{\\\"Columns\\\":[{\\\"ElementID\\\":1,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":1,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":2,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":2,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":203,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":3,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":4,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":4,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":5,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":5,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":6,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":9,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":7,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":10,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":8,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null}]},\\\"FileListParent\\\":null}', @FilesViewType=0, @ReturnFilesNumber=false, @ReturnTags=false, @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748586439361737335",
+        "fields": {
+            "TraceID": "2c6588b2e4da7769b0c28302a9499ead",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:12.276+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-7\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"00358fb9bf4885569061e5552fa20a8a\",\"trace_flags\":\"01\",\"span_id\":\"7d142cf2151afae3\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DF_FilesList @UserName='marco.pistoia', @Password='*****', @InputParameters='{\\\"FromRecord\\\":1,\\\"ToRecord\\\":20,\\\"ReturnMultipleValues\\\":false,\\\"SearchCriterias\\\":[{\\\"SearchCriteriaHeaderID\\\":0,\\\"FolderID\\\":1000000,\\\"FileTypeID\\\":1000111,\\\"FileTypeOrdinalID\\\":1,\\\"CriteriaExpressionString\\\":null,\\\"Criterias\\\":[]}],\\\"FilesView\\\":{\\\"Columns\\\":[{\\\"ElementID\\\":1,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":1,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":2,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":2,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":203,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":3,\\\"SortType\\\":\\\"A\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":3,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":4,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":4,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":5,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":5,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":6,\\\"SortType\\\":\\\"D\\\",\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":9,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":7,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null},{\\\"ElementID\\\":10,\\\"ElementTypeID\\\":\\\"PM\\\",\\\"Order\\\":8,\\\"SortType\\\":null,\\\"AggregationFunctionID\\\":null}]},\\\"FileListParent\\\":null}', @FilesViewType=0, @ReturnFilesNumber=true, @ReturnTags=false, @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748586432276572510",
+        "fields": {
+            "TraceID": "00358fb9bf4885569061e5552fa20a8a",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:10.789+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-10\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"3a2b478ba5953c2c220b66ab72896bbd\",\"trace_flags\":\"01\",\"span_id\":\"907f93479215c588\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DF_FilesView @UserName='marco.pistoia', @Password='*****', @FolderID=1000000, @FileTypeID=1000111, @FileTypeOrdinalID=1, @FileTempID=null, @ParentFieldID=null, @ParentRowID=null, @ParentOrdinalID=null, @ParentFileStateID=null, @LanguageID=2, @ComponentType=0\",\"context\":\"default\"}",
+        "timestamp": "1748586430790233525",
+        "fields": {
+            "TraceID": "3a2b478ba5953c2c220b66ab72896bbd",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:08.171+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-9\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"f85c04d0257315759d613f18b01678b5\",\"trace_flags\":\"01\",\"span_id\":\"992193c565d37b11\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CNAV_NavigationTreeElementsList @UserName='marco.pistoia', @Password='*****', @FolderID=1000000, @FileTempID=null, @ParentFieldID=null, @ParentRowID=null, @ParentOrdinalID=null, @ParentFileStateID=null, @LanguageID=2, @ComponentType=0\",\"context\":\"default\"}",
+        "timestamp": "1748586428172188904",
+        "fields": {
+            "TraceID": "f85c04d0257315759d613f18b01678b5",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:07.640+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-7\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"45e9d395138b0d2ba50fc4b2ee8b0170\",\"trace_flags\":\"01\",\"span_id\":\"0a9137bfa24ea399\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CFT_FieldValuesList @UserName='marco.pistoia', @Password='*****', @FileTypeID=1000115, @FileTempID=null, @FieldID=4, @RowID=null, @OrdinalID=null, @QueryFilter=null\",\"context\":\"default\"}",
+        "timestamp": "1748586427641132717",
+        "fields": {
+            "TraceID": "45e9d395138b0d2ba50fc4b2ee8b0170",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:07.387+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-10\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"3b2e7fa04c842a66a911fdfddddcfbff\",\"trace_flags\":\"01\",\"span_id\":\"6ca30213d090db9a\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DNAV_UserPagesList @UserName='marco.pistoia', @Password='*****'\",\"context\":\"default\"}",
+        "timestamp": "1748586427390039714",
+        "fields": {
+            "TraceID": "3b2e7fa04c842a66a911fdfddddcfbff",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:06.769+0000\",\"level\":\"ERROR\",\"thread\":\"http-nio-8089-exec-8\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"00073b9120112b0c3b2e36db3a320cc3\",\"trace_flags\":\"01\",\"span_id\":\"22454aa42249adaf\"},\"logger\":\"it.eresult.omniaplace.handlers.attachment.service.AttachmentService\",\"message\":\"Unable to download file: file was not found (Cloud_S3|attachments|Foto_B8787.png)\",\"context\":\"default\"}",
+        "timestamp": "1748586426769390969",
+        "fields": {
+            "TraceID": "00073b9120112b0c3b2e36db3a320cc3",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "error",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:06.682+0000\",\"level\":\"DEBUG\",\"thread\":\"ForkJoinPool-1-worker-805\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"00073b9120112b0c3b2e36db3a320cc3\",\"trace_flags\":\"01\",\"span_id\":\"22454aa42249adaf\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DF_LoadKeyBinaryFile @UserName='marco.pistoia', @Password='*****', @FileTypeID=1000000, @FileID='1000000 - 27', @FieldID=1, @RowValue=null, @OrdinalID=1, @fFirstFile =true\",\"context\":\"default\"}",
+        "timestamp": "1748586426683197784",
+        "fields": {
+            "TraceID": "00073b9120112b0c3b2e36db3a320cc3",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:06.678+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-6\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"7ba55c7dfb45d2174f56eaf85eca6360\",\"trace_flags\":\"01\",\"span_id\":\"543aa8fce132a2f2\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CNAV_NavigationTreeElementsList @UserName='marco.pistoia', @Password='*****', @FolderID=null, @FileTempID=null, @ParentFieldID=null, @ParentRowID=null, @ParentOrdinalID=null, @ParentFileStateID=null, @LanguageID=2, @ComponentType=0\",\"context\":\"default\"}",
+        "timestamp": "1748586426678780578",
+        "fields": {
+            "TraceID": "7ba55c7dfb45d2174f56eaf85eca6360",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:06.457+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-3\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"c6d3df29c6d1c755dc6712511bbe4fbd\",\"trace_flags\":\"01\",\"span_id\":\"913eec72e29dfa55\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CNAV_MenuElementsList @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748586426457977347",
+        "fields": {
+            "TraceID": "c6d3df29c6d1c755dc6712511bbe4fbd",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:06.438+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-1\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"eacf865480737d6c479412a4c2ca65a7\",\"trace_flags\":\"01\",\"span_id\":\"e7728a3cae904784\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set-577018640] Received event result from database: {\\\"EventCommands\\\":[],\\\"EventCommandsPushRecipients\\\":[],\\\"FileHeader\\\":null,\\\"DeletingFields\\\":null,\\\"DeletingRows\\\":null,\\\"OrderedRows\\\":null,\\\"Fields\\\":null,\\\"FieldsExtendedProperties\\\":null,\\\"FieldControlExtendedProperties\\\":null,\\\"FilePropertiesPermissions\\\":null,\\\"FieldsPermissions\\\":null,\\\"OrdinalFieldsPermissions\\\":null,\\\"CommandsPermissions\\\":null,\\\"FieldsValues\\\":null,\\\"FieldGroups\\\":null,\\\"FieldGroupsPermissions\\\":null,\\\"Sheets\\\":null,\\\"FilePermissions\\\":null,\\\"PivotData\\\":null,\\\"FileExtendedProperties\\\":null,\\\"SheetsExtendedProperties\\\":null,\\\"FieldGroupsExtendedProperties\\\":null,\\\"FieldGroupsChartExtendedProperties\\\":null,\\\"FieldTreesExtendedProperties\\\":null,\\\"CommandsExtendedProperties\\\":null}\",\"context\":\"default\"}",
+        "timestamp": "1748586426438430090",
+        "fields": {
+            "TraceID": "eacf865480737d6c479412a4c2ca65a7",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:06.347+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-1\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"eacf865480737d6c479412a4c2ca65a7\",\"trace_flags\":\"01\",\"span_id\":\"e7728a3cae904784\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_TF_ExecuteEvent @UserName='marco.pistoia', @Password='*****', @RoutineKey='', @InputParameters='{\\\"SessionCode\\\":\\\"60eb1aff-8e15-4813-acb8-a2eaf0289cbb\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":0,\\\"EventType\\\":0,\\\"FolderID\\\":null,\\\"FileTypeID\\\":null,\\\"FileTypeOrdinalID\\\":null,\\\"MenuElementID\\\":null,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":2,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":null,\\\"SelectedItems\\\":null,\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":true}', @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748586426347409370",
+        "fields": {
+            "TraceID": "eacf865480737d6c479412a4c2ca65a7",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:06.346+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-1\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"eacf865480737d6c479412a4c2ca65a7\",\"trace_flags\":\"01\",\"span_id\":\"e7728a3cae904784\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set-577018640] Executing with args: {\\\"SessionCode\\\":\\\"60eb1aff-8e15-4813-acb8-a2eaf0289cbb\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":0,\\\"EventType\\\":0,\\\"FolderID\\\":null,\\\"FileTypeID\\\":null,\\\"FileTypeOrdinalID\\\":null,\\\"MenuElementID\\\":null,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":2,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":null,\\\"SelectedItems\\\":null,\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":true}\",\"context\":\"default\"}",
+        "timestamp": "1748586426347377068",
+        "fields": {
+            "TraceID": "eacf865480737d6c479412a4c2ca65a7",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:06.334+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-1\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"eacf865480737d6c479412a4c2ca65a7\",\"trace_flags\":\"01\",\"span_id\":\"e7728a3cae904784\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DNAV_RootElement @UserName='marco.pistoia', @Password='*****'\",\"context\":\"default\"}",
+        "timestamp": "1748586426335069113",
+        "fields": {
+            "TraceID": "eacf865480737d6c479412a4c2ca65a7",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:06.238+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-7\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"0197d738648301d003507491a82c23b9\",\"trace_flags\":\"01\",\"span_id\":\"290533ff92976d05\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_DU_SaveUserLoginLog @UserName='marco.pistoia', @Password='*****', @LoginDate=null\",\"context\":\"default\"}",
+        "timestamp": "1748586426238749025",
+        "fields": {
+            "TraceID": "0197d738648301d003507491a82c23b9",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:06.028+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-5\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"eb0297ba1c42fb350c1792cf50cd4d44\",\"trace_flags\":\"01\",\"span_id\":\"728ec9b53697e53b\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DU_UserDetails @UserName='marco.pistoia', @Password='*****', @InputParameters='{\\\"QueryString\\\":null,\\\"QueryUserIDList\\\":[],\\\"QueryUserNameList\\\":[\\\"marco.pistoia\\\"]}'\",\"context\":\"default\"}",
+        "timestamp": "1748586426028692241",
+        "fields": {
+            "TraceID": "eb0297ba1c42fb350c1792cf50cd4d44",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:05.973+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-10\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"f0b3bdac29dc1a03e80867f3a195e2c5\",\"trace_flags\":\"01\",\"span_id\":\"2c93acb0e2892c76\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set-1904693584] Received event result from database: {\\\"EventCommands\\\":[],\\\"EventCommandsPushRecipients\\\":[],\\\"FileHeader\\\":null,\\\"DeletingFields\\\":null,\\\"DeletingRows\\\":null,\\\"OrderedRows\\\":null,\\\"Fields\\\":null,\\\"FieldsExtendedProperties\\\":null,\\\"FieldControlExtendedProperties\\\":null,\\\"FilePropertiesPermissions\\\":null,\\\"FieldsPermissions\\\":null,\\\"OrdinalFieldsPermissions\\\":null,\\\"CommandsPermissions\\\":null,\\\"FieldsValues\\\":null,\\\"FieldGroups\\\":null,\\\"FieldGroupsPermissions\\\":null,\\\"Sheets\\\":null,\\\"FilePermissions\\\":null,\\\"PivotData\\\":null,\\\"FileExtendedProperties\\\":null,\\\"SheetsExtendedProperties\\\":null,\\\"FieldGroupsExtendedProperties\\\":null,\\\"FieldGroupsChartExtendedProperties\\\":null,\\\"FieldTreesExtendedProperties\\\":null,\\\"CommandsExtendedProperties\\\":null}\",\"context\":\"default\"}",
+        "timestamp": "1748586425974295060",
+        "fields": {
+            "TraceID": "f0b3bdac29dc1a03e80867f3a195e2c5",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:05.543+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-10\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"f0b3bdac29dc1a03e80867f3a195e2c5\",\"trace_flags\":\"01\",\"span_id\":\"2c93acb0e2892c76\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_TF_ExecuteEvent @UserName='marco.pistoia', @Password='*****', @RoutineKey='', @InputParameters='{\\\"SessionCode\\\":\\\"60eb1aff-8e15-4813-acb8-a2eaf0289cbb\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":0,\\\"EventType\\\":0,\\\"FolderID\\\":null,\\\"FileTypeID\\\":null,\\\"FileTypeOrdinalID\\\":null,\\\"MenuElementID\\\":null,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":26,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":null,\\\"SelectedItems\\\":null,\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":null}', @LanguageID=2\",\"context\":\"default\"}",
+        "timestamp": "1748586425543816519",
+        "fields": {
+            "TraceID": "f0b3bdac29dc1a03e80867f3a195e2c5",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:05.543+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-10\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"f0b3bdac29dc1a03e80867f3a195e2c5\",\"trace_flags\":\"01\",\"span_id\":\"2c93acb0e2892c76\"},\"logger\":\"it.eresult.omniaplace.event.service.impl.EventServiceRedisImpl\",\"message\":\"[not-set-1904693584] Executing with args: {\\\"SessionCode\\\":\\\"60eb1aff-8e15-4813-acb8-a2eaf0289cbb\\\",\\\"ComponentType\\\":0,\\\"EventHeaderID\\\":0,\\\"EventType\\\":0,\\\"FolderID\\\":null,\\\"FileTypeID\\\":null,\\\"FileTypeOrdinalID\\\":null,\\\"MenuElementID\\\":null,\\\"FileListParent\\\":null,\\\"SheetID\\\":null,\\\"FieldGroupID\\\":null,\\\"CommandID\\\":null,\\\"FieldID\\\":null,\\\"RowID\\\":null,\\\"OrdinalID\\\":null,\\\"Value\\\":null,\\\"FileVersionID\\\":null,\\\"EventID\\\":26,\\\"OnError\\\":null,\\\"Order\\\":1,\\\"Condition\\\":null,\\\"AfterFileStateID\\\":null,\\\"LastChangeDateSaveProc\\\":null,\\\"Pivot\\\":null,\\\"AdditionalParameters\\\":null,\\\"SelectedItems\\\":null,\\\"PasteParameters\\\":null,\\\"CopyParameters\\\":null,\\\"RowIDs\\\":null,\\\"FieldsToOrder\\\":null,\\\"RowsToMove\\\":null,\\\"AvoidChangeManagement\\\":null,\\\"AvoidLoadChangeManagement\\\":null,\\\"FlagLogin\\\":null}\",\"context\":\"default\"}",
+        "timestamp": "1748586425543757314",
+        "fields": {
+            "TraceID": "f0b3bdac29dc1a03e80867f3a195e2c5",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:05.478+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-10\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"f0b3bdac29dc1a03e80867f3a195e2c5\",\"trace_flags\":\"01\",\"span_id\":\"2c93acb0e2892c76\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_DU_CheckAccount @UserName='marco.pistoia', @Password='*****', @InputParameters='{\\\"AuthenticationType\\\":3,\\\"FromSSO\\\":false,\\\"UserDetails\\\":{\\\"UUID\\\":\\\"ade647be-d574-4189-964f-f119d55340e1\\\",\\\"Username\\\":\\\"marco.pistoia\\\",\\\"Email\\\":\\\"marco.pistoia@eresult.it\\\",\\\"LocaleCode\\\":\\\"en\\\",\\\"Name\\\":\\\"Marco\\\",\\\"Surname\\\":\\\"Pistoia\\\",\\\"Description\\\":null,\\\"Roles\\\":null}}'\",\"context\":\"default\"}",
+        "timestamp": "1748586425478567080",
+        "fields": {
+            "TraceID": "f0b3bdac29dc1a03e80867f3a195e2c5",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    },
+    {
+        "line": "{\"timestamp\":\"2025-05-30T06:27:05.338+0000\",\"level\":\"DEBUG\",\"thread\":\"http-nio-8089-exec-9\",\"mdc\":{\"tenant\":\"omniademo\",\"trace_id\":\"fbd1ae1173cdfb1ac493aa5edf4402d0\",\"trace_flags\":\"01\",\"span_id\":\"f431df4e0e85a19e\"},\"logger\":\"it.eresult.common.sqlserver.utils.SQLServerLogHelper\",\"message\":\"Executing stored procedure: EXEC P_MS_CS_SystemInfo \",\"context\":\"default\"}",
+        "timestamp": "1748586425339193886",
+        "fields": {
+            "TraceID": "fbd1ae1173cdfb1ac493aa5edf4402d0",
+            "app": "omniaplace-service",
+            "container": "omniaplace-service",
+            "detected_level": "debug",
+            "filename": "/var/log/pods/testing_omniaplace-service-79fc7859d8-7mkg4_757f1a14-a06c-427e-bb59-f814bdbf0364/omniaplace-service/1.log",
+            "instance": "omniaplace-stack",
+            "job": "testing/omniaplace-service",
+            "namespace": "testing",
+            "node_name": "leibniz",
+            "pod": "omniaplace-service-79fc7859d8-7mkg4",
+            "service_name": "omniaplace-service",
+            "stream": "stdout"
+        }
+    }
+]
