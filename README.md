@@ -6,19 +6,19 @@ This project performs structured analysis on JSON-based SQL Server logs to extra
 
 ## 📁 Project Structure
 
-log_analysis_project/
-│
-├── data/ # Raw JSON log files
-├── output/ # Auto-generated analysis outputs (CSV, plots)
-├── load_and_parse.py # Module for loading and flattening JSON logs
-├── preprocess.py # Cleans and prepares logs for analysis
-├── global_stats.py # Task 1: Field count and hierarchy analysis
-├── stopwatch.py # Task 2: Stopwatch execution time analysis
-├── large_array_check.py # Task 3: Oversized JSON array detection
-├── eda.py # Extra visualizations and insights
-├── main.py # Pipeline runner script
-├── requirements.txt
-└── .gitignore
+### `log_analysis_project/`
+
+- `data/` – Raw JSON log files  
+- `output/` – Auto-generated analysis outputs (CSV, plots)  
+- `load_and_parse.py` – Module for loading and flattening JSON logs  
+- `preprocess.py` – Cleans and prepares logs for analysis  
+- `global_stats.py` – **Task 1**: Field count and hierarchy analysis  
+- `stopwatch.py` – **Task 2**: Stopwatch execution time analysis  
+- `large_array_check.py` – **Task 3**: Oversized JSON array detection  
+- `eda.py` – Extra visualizations and insights  
+- `main.py` – Pipeline runner script  
+- `requirements.txt` – Python dependency list  
+- `.gitignore` – Files/folders to exclude from version control  
 
 
 ---
