@@ -1,0 +1,21 @@
+# Ignore analysis outputs
+output/
+
+# Ignore Python cache files and bytecode
+__pycache__/
+*.pyc
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system-specific hidden files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE settings (VSCode, PyCharm, etc.)
+.vscode/
+.idea/
+
+# Ignore environment files (optional if you're using venv or conda)
+.env
+.venv/
