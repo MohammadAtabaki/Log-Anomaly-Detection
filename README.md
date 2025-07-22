@@ -16,6 +16,9 @@ This project performs structured analysis on JSON-based SQL Server logs to extra
 - `stopwatch.py` – **Task 2**: Stopwatch execution time analysis  
 - `large_array_check.py` – **Task 3**: Oversized JSON array detection  
 - `eda.py` – Extra visualizations and insights  
+- `task2_anomaly_features.py` – Extract the meaningful features for anomaly detection and feaure engineering based on the result of task 2  
+- `anomaly_detection.py` – Train the Isolation Forest model for the detecting the anomalies based on the extracted feaures  
+- `anomaly_model_tester.py` – Test the trained model based on the generated data    
 - `main.py` – Pipeline runner script  
 - `requirements.txt` – Python dependency list  
 - `.gitignore` – Files/folders to exclude from version control  
@@ -99,6 +102,38 @@ This project performs structured analysis on JSON-based SQL Server logs to extra
 
 ---
 
+## ✅ Anomaly Detection (Isolation Forest)
+
+The project includes **anomaly detection** to identify irregular patterns in the stopwatch execution data:
+
+- **Model**: Isolation Forest (an unsupervised machine learning algorithm)
+- **Objective**: Detect anomalies based on stopwatch execution breakdowns (e.g., subtasks taking disproportionate time, anomalous task patterns)
+- **Features** used:
+  - `total_time_sec`: Total execution time for a stopwatch.
+  - `max_subtask_percent`: The percentage of time for the most time-consuming subtask.
+  - `sum_other_subtask_time`: Total time for all subtasks except the main one.
+  - `ratio_other_to_max`: Ratio of non-main subtask time to the max subtask time.
+  
+### Steps:
+1. **Train Isolation Forest**: Model is trained using the above features and saved as `isolation_forest_model.pkl`.
+2. **Detect Anomalies**: For each stopwatch record, the model predicts whether it's an anomaly (`-1`) or normal (`1`).
+3. **Outputs**:
+   - `output/anomaly_results.csv`: Contains all logs with their anomaly scores and predictions.
+   - `output/anomalies_detected.csv`: Contains only the detected anomalies.
+
+### Example of Anomaly Results:
+
+| total_time_sec | max_subtask_percent | sum_other_subtask_time | ratio_other_to_max | prediction | anomaly_score |
+|----------------|---------------------|-------------------------|--------------------|------------|----------------|
+| 1.5            | 99                  | 0.01                    | 0.006              | 1          | 0.083069       |
+| 1.2            | 60                  | 1.10                    | 1.833              | -1         | -0.102871      |
+
+### Visualizations:
+- Anomaly score distribution is plotted to visually identify the threshold where anomalies start appearing.
+- A scatter plot shows **normal vs. anomalous tasks**, with color coding based on predictions.
+
+---
+
 ## 📦 Output Files
 
 Saved under the `output/` directory:
@@ -115,6 +150,7 @@ Major Python libraries:
 - `matplotlib`
 - `seaborn`
 - `scikit-learn`
+- `joblib`
 
 Install all dependencies using:
 

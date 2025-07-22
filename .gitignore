@@ -16,6 +16,10 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Ignore environment files (optional if you're using venv or conda)
+# Ignore environment files (using venv or conda)
 .env
 .venv/
+
+# Ignore model files 
+*.pkl
+*.joblib

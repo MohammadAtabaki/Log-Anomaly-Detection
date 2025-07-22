@@ -6,7 +6,8 @@ from preprocess import clean_logs
 
 from global_stats import (
     analyze_execute_event_flat,
-    analyze_execute_event_hierarchy, plot_execute_event_combinations
+    analyze_execute_event_hierarchy, 
+    plot_execute_event_combinations
 )
 from stopwatch import extract_stopwatch_tasks, plot_stopwatch_analysis
 from large_array_check import detect_large_json_arrays
@@ -18,6 +19,10 @@ from eda import (
     extract_top_keywords,
 )
 
+from task2_anomaly_features import build_stopwatch_features
+from anomaly_detection import run_isolation_forest
+
+from anomaly_model_tester import load_model, generate_test_samples, test_model_on_samples
 
 def save_result(df, filename):
     os.makedirs("output", exist_ok=True)
@@ -90,6 +95,31 @@ def main():
 
 
     print("\n✅ All tasks completed successfully!")
+
+    # ✅ Step 7: Feature Extraction for Anomaly Detection
+
+    print('Starting the task 2 stopwatch feature extraction for anomaly detection...')
+
+    df_features = build_stopwatch_features()
+    print(df_features.head())
+
+    # ✅ Step 8: Anomaly Detection from Task 2 Features
+    print("\n🚨 Running Anomaly Detection...")
+    anomaly_df = run_isolation_forest("output/task2_stopwatch_features.csv")
+
+    # Load the trained model
+    model = load_model("output/isolation_forest_model.joblib")
+
+    # Generate or load real test data (use generate_test_samples() if you want synthetic data)
+    test_df = generate_test_samples()  # Or load your real data
+
+    # Run the anomaly detection model
+    results = test_model_on_samples(model, test_df)
+
+    # Print the results
+    print("Anomaly Detection Results:")
+    print(results[['total_time_sec', 'max_subtask_percent', 'sum_other_subtask_time', 'ratio_other_to_max', 'prediction', 'anomaly_score']])
+
 
 if __name__ == "__main__":
     main()
