@@ -23,3 +23,10 @@ Thumbs.db
 # Ignore model files 
 *.pkl
 *.joblib
+
+# Ignore CSV output files
+*.csv
+
+# Ignore figures and plots
+output/figures/
+*.png

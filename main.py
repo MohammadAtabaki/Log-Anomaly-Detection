@@ -23,6 +23,11 @@ from task2_anomaly_features import build_stopwatch_features
 from anomaly_detection import run_isolation_forest
 
 from anomaly_model_tester import load_model, generate_test_samples, test_model_on_samples
+from feature_engineering import process as feature_engineering_process
+from kmeans_clustering import run_kmeans_clustering
+from kmeans_grid_search import run_kmeans_grid_search
+from dbscan_clustering import run_dbscan_clustering
+from anomaly_detection_vs_dbscan import compare_dbscan_and_anomaly
 
 def save_result(df, filename):
     os.makedirs("output", exist_ok=True)
@@ -121,5 +126,35 @@ def main():
     print(results[['total_time_sec', 'max_subtask_percent', 'sum_other_subtask_time', 'ratio_other_to_max', 'prediction', 'anomaly_score']])
 
 
+    # ✅ Step 9: Feature Engineering for KMeans clustering
+    print("\n🔧 Running Feature Engineering for KMeans...")
+    feature_engineering_process()
+
+    print("✅ Feature engineering completed and saved.")
+
+    '''    
+    # ✅ Step 10: KMeans Clustering
+    print("\n🔍 Running KMeans Clustering...")
+    clustered_df = run_kmeans_clustering()
+    print("✅ KMeans clustering completed and results saved.")  
+
+
+    # ✅ Step 10: KMeans Grid Search for Optimal Clusters
+    print("\n🔍 Running KMeans Grid Search for Optimal Clusters...")
+    run_kmeans_grid_search()
+    print("✅ KMeans grid search completed and results saved.")
+ 
+    '''
+
+    # ✅ Step 11: DBSCAN Clustering
+    print("\n🔍 Running DBSCAN Clustering...")
+    dbscan_df = run_dbscan_clustering()
+    print("✅ DBSCAN clustering completed and results saved.")
+
+
+    # ✅ Step 12: Compare DBSCAN and Anomaly Detection results
+    print("\n🔍 Comparing DBSCAN and Anomaly Detection results...")
+    compare_dbscan_and_anomaly()
+    print("✅ Comparison completed and results saved.")
 if __name__ == "__main__":
     main()

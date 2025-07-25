@@ -1,6 +1,6 @@
 # 🔍 Log Analysis Project
 
-This project performs structured analysis on JSON-based SQL Server logs to extract meaningful patterns, performance metrics, and anomalies using Python.
+This project performs structured analysis on JSON-based SQL Server logs to extract meaningful patterns, performance metrics, anomalies, and clusters using Python.
 
 ---
 
@@ -16,13 +16,15 @@ This project performs structured analysis on JSON-based SQL Server logs to extra
 - `stopwatch.py` – **Task 2**: Stopwatch execution time analysis  
 - `large_array_check.py` – **Task 3**: Oversized JSON array detection  
 - `eda.py` – Extra visualizations and insights  
-- `task2_anomaly_features.py` – Extract the meaningful features for anomaly detection and feaure engineering based on the result of task 2  
-- `anomaly_detection.py` – Train the Isolation Forest model for the detecting the anomalies based on the extracted feaures  
-- `anomaly_model_tester.py` – Test the trained model based on the generated data    
+- `task2_anomaly_features.py` – Extract meaningful features for anomaly detection and feature engineering based on the result of task 2  
+- `feature_engineering.py` – Embeds categorical features (e.g., stopwatch names) and applies dimensionality reduction for clustering and anomaly detection  
+- `dbscan_clustering.py` – Performs DBSCAN clustering on engineered features to identify groups and outliers in the log data  
+- `anomaly_detection.py` – Train the Isolation Forest model for detecting anomalies based on the extracted features  
+- `anomaly_detection_vs_dbscan.py` – Compares anomalies detected by DBSCAN clustering and Isolation Forest, providing a summary of overlap and unique detections  
+- `anomaly_model_tester.py` – Test the trained model based on the generated data  
 - `main.py` – Pipeline runner script  
 - `requirements.txt` – Python dependency list  
 - `.gitignore` – Files/folders to exclude from version control  
-
 
 ---
 
@@ -32,7 +34,7 @@ This project performs structured analysis on JSON-based SQL Server logs to extra
 
     ```bash
     git clone https://gitlab.internal.omniaplace.net/internship/data-analysis/log-analysis-project.git
-    cd log-analysis-project
+    cd log-analysis_project
     ```
 
 2. **Install dependencies**:
@@ -102,35 +104,45 @@ This project performs structured analysis on JSON-based SQL Server logs to extra
 
 ---
 
-## ✅ Anomaly Detection (Isolation Forest)
+## 🧩 Feature Engineering & Clustering
 
-The project includes **anomaly detection** to identify irregular patterns in the stopwatch execution data:
+### `feature_engineering.py`
+- **Purpose:** Transforms raw stopwatch features and categorical columns (like `stopwatch_name`) into numerical vectors using sentence embeddings and PCA for dimensionality reduction.
+- **Objective:** Prepares data for clustering and anomaly detection by standardizing features and reducing complexity.
 
-- **Model**: Isolation Forest (an unsupervised machine learning algorithm)
-- **Objective**: Detect anomalies based on stopwatch execution breakdowns (e.g., subtasks taking disproportionate time, anomalous task patterns)
-- **Features** used:
-  - `total_time_sec`: Total execution time for a stopwatch.
-  - `max_subtask_percent`: The percentage of time for the most time-consuming subtask.
-  - `sum_other_subtask_time`: Total time for all subtasks except the main one.
-  - `ratio_other_to_max`: Ratio of non-main subtask time to the max subtask time.
-  
-### Steps:
-1. **Train Isolation Forest**: Model is trained using the above features and saved as `isolation_forest_model.pkl`.
-2. **Detect Anomalies**: For each stopwatch record, the model predicts whether it's an anomaly (`-1`) or normal (`1`).
-3. **Outputs**:
-   - `output/anomaly_results.csv`: Contains all logs with their anomaly scores and predictions.
-   - `output/anomalies_detected.csv`: Contains only the detected anomalies.
+### `dbscan_clustering.py`
+- **Purpose:** Applies DBSCAN clustering to the engineered features to discover natural groupings and outliers in the log data.
+- **Objective:** Identifies clusters of similar log events and flags anomalies as points not belonging to any cluster (`cluster = -1`).
+- **Result & Outcome:**  
+  - The number of clusters and the count of data points in each cluster are reported.
+  - Outliers (anomalies) are highlighted for further analysis.
+  - Visualizations are saved in `output/figures/` showing cluster assignments in both feature and PCA-reduced spaces.
 
-### Example of Anomaly Results:
+---
 
-| total_time_sec | max_subtask_percent | sum_other_subtask_time | ratio_other_to_max | prediction | anomaly_score |
-|----------------|---------------------|-------------------------|--------------------|------------|----------------|
-| 1.5            | 99                  | 0.01                    | 0.006              | 1          | 0.083069       |
-| 1.2            | 60                  | 1.10                    | 1.833              | -1         | -0.102871      |
+## 🚨 Anomaly Detection & Comparison
 
-### Visualizations:
-- Anomaly score distribution is plotted to visually identify the threshold where anomalies start appearing.
-- A scatter plot shows **normal vs. anomalous tasks**, with color coding based on predictions.
+### `anomaly_detection.py`
+- **Model:** Isolation Forest (unsupervised)
+- **Objective:** Detect anomalies based on stopwatch execution breakdowns (e.g., subtasks taking disproportionate time, anomalous task patterns)
+- **Features Used:**
+  - `total_time_sec`
+  - `max_subtask_percent`
+  - `sum_other_subtask_time`
+  - `ratio_other_to_max`
+- **Outputs:**
+  - `output/anomaly_results.csv`: All logs with anomaly scores and predictions.
+  - `output/anomalies_detected.csv`: Only the detected anomalies.
+
+### `anomaly_detection_vs_dbscan.py`
+- **Purpose:** Compares anomalies detected by DBSCAN clustering and Isolation Forest.
+- **Objective:**  
+  - Shows overlap and unique detections between both methods.
+  - Provides a preview of the number of anomalies detected by each method and both.
+- **Result & Outcome:**  
+  - Prints the count of anomalies detected only by DBSCAN, only by Isolation Forest, and by both.
+  - Saves a comparison CSV and a bar plot visualizing the results in `output/figures/dbscan_vs_isolation_forest_comparison_plot.png`.
+  - Example: If DBSCAN detects 19 anomalies and Isolation Forest detects 18, the comparison will show how many are unique to each and how many overlap.
 
 ---
 
@@ -139,6 +151,8 @@ The project includes **anomaly detection** to identify irregular patterns in the
 Saved under the `output/` directory:
 - CSV results from each task
 - Plots for visual insights (PNG or displayed inline)
+- Model files (`.joblib`, `.pkl`)
+- Cluster and anomaly comparison results
 
 ---
 
@@ -147,14 +161,17 @@ Saved under the `output/` directory:
 Major Python libraries:
 
 - `pandas`
+- `numpy`
 - `matplotlib`
 - `seaborn`
 - `scikit-learn`
 - `joblib`
+- `sentence-transformers`
 
 Install all dependencies using:
 
 ```bash
 pip install -r requirements.txt
+```
 
 
