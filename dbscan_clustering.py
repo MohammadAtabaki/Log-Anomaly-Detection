@@ -63,6 +63,17 @@ def run_dbscan_clustering(csv_file="output/preprocessed_clustering_features.csv"
     joblib.dump(dbscan_info, "output/dbscan_model.joblib")
     print(f"✅ DBSCAN model saved to output/dbscan_model.joblib")
 
+    if 'ground_truth_label' in df.columns:
+        ari = adjusted_rand_score(df['ground_truth_label'], df['cluster'])
+        print(f"Adjusted Rand Index (ARI): {ari}")
+    else:
+        print(f"Silhouette Score for DBSCAN: {best_score}")
+    
+
+    return df
+def plot_dbscan_clusters(df):
+        
+
     # ✅ Step 9: Visualize the clusters (2D visualization)
     plt.figure(figsize=(10, 6))
     plt.scatter(df['total_time_sec'], df['max_subtask_percent'], c=df['cluster'], cmap='viridis')
@@ -72,23 +83,8 @@ def run_dbscan_clustering(csv_file="output/preprocessed_clustering_features.csv"
     plt.colorbar(label='Cluster')
     plt.tight_layout()
 
-    # ✅ Step 10: Dimensionality Reduction using PCA for better visualization
-    pca = PCA(n_components=2)
-    X_pca = pca.fit_transform(X)
 
-    # Visualize DBSCAN clustering results with PCA
-    plt.figure(figsize=(10, 6))
-    plt.scatter(X_pca[:, 0], X_pca[:, 1], c=df['cluster'], cmap='viridis')
-    plt.title('DBSCAN Clustering of Logs Based on Execution Features (PCA)')
-    plt.xlabel('PCA Component 1')
-    plt.ylabel('PCA Component 2')
-    plt.colorbar(label='Cluster')
-    plt.tight_layout()
-
-    os.makedirs("output/figures", exist_ok=True)
-    plt.savefig("output/figures/dbscan_clustering_plot.png")
-
-    # ✅ Step 11: Show the final number of clusters
+    # ✅ Step 10: Show the final number of clusters
     # After running DBSCAN and assigning the 'cluster' label to the dataframe
     # Step 1: Find unique cluster labels
     unique_clusters = df['cluster'].unique()
@@ -114,10 +110,6 @@ def run_dbscan_clustering(csv_file="output/preprocessed_clustering_features.csv"
     plt.show()
 
     
-    if 'ground_truth_label' in df.columns:
-        ari = adjusted_rand_score(df['ground_truth_label'], df['cluster'])
-        print(f"Adjusted Rand Index (ARI): {ari}")
-    else:
-        print(f"Silhouette Score for DBSCAN: {best_score}")
 
-    return df
+
+

@@ -38,6 +38,12 @@ def run_isolation_forest(csv_path="output/task2_stopwatch_features.csv", contami
     df.to_csv("output/anomaly_results.csv", index=False)
     print("💾 Anomaly results saved to output/anomaly_results.csv")
 
+    os.makedirs(os.path.dirname("output/isolation_forest_model.joblib"), exist_ok=True)
+    joblib.dump(model, "output/isolation_forest_model.joblib")
+
+    return df
+def plot_anomaly_scores(df):
+
     # Plot and save figure
     plt.figure(figsize=(10, 6))
     colors = df['is_anomaly'].map({True: 'red', False: 'green'})
@@ -55,7 +61,9 @@ def run_isolation_forest(csv_path="output/task2_stopwatch_features.csv", contami
     """
     Save the trained Isolation Forest model to a file.
     """
-    os.makedirs(os.path.dirname("output/isolation_forest_model.joblib"), exist_ok=True)
-    joblib.dump(model, "output/isolation_forest_model.joblib")
+    
 
-    return df
+
+
+
+

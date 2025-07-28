@@ -20,12 +20,12 @@ from eda import (
 )
 
 from task2_anomaly_features import build_stopwatch_features
-from anomaly_detection import run_isolation_forest
+from anomaly_detection import run_isolation_forest, plot_anomaly_scores
 
 from anomaly_model_tester import load_model, generate_test_samples, test_model_on_samples
 from feature_engineering import process as feature_engineering_process
 
-from dbscan_clustering import run_dbscan_clustering
+from dbscan_clustering import run_dbscan_clustering, plot_dbscan_clusters
 from anomaly_detection_vs_dbscan import compare_dbscan_and_anomaly
 
 def save_result(df, filename):
@@ -110,6 +110,7 @@ def main():
     # ✅ Step 8: Anomaly Detection from Task 2 Features
     print("\n🚨 Running Anomaly Detection...")
     anomaly_df = run_isolation_forest("output/task2_stopwatch_features.csv")
+    plot_anomaly_scores(anomaly_df)
 
     # Load the trained model
     model = load_model("output/isolation_forest_model.joblib")
@@ -131,27 +132,15 @@ def main():
 
     print("✅ Feature engineering completed and saved.")
 
-    '''    
-    # ✅ Step 10: KMeans Clustering
-    print("\n🔍 Running KMeans Clustering...")
-    clustered_df = run_kmeans_clustering()
-    print("✅ KMeans clustering completed and results saved.")  
 
-
-    # ✅ Step 10: KMeans Grid Search for Optimal Clusters
-    print("\n🔍 Running KMeans Grid Search for Optimal Clusters...")
-    run_kmeans_grid_search()
-    print("✅ KMeans grid search completed and results saved.")
- 
-    '''
-
-    # ✅ Step 11: DBSCAN Clustering
+    # ✅ Step 10: DBSCAN Clustering
     print("\n🔍 Running DBSCAN Clustering...")
     dbscan_df = run_dbscan_clustering()
     print("✅ DBSCAN clustering completed and results saved.")
+    plot_dbscan_clusters(dbscan_df)
 
 
-    # ✅ Step 12: Compare DBSCAN and Anomaly Detection results
+    # ✅ Step 11: Compare DBSCAN and Anomaly Detection results
     print("\n🔍 Comparing DBSCAN and Anomaly Detection results...")
     compare_dbscan_and_anomaly()
     print("✅ Comparison completed and results saved.")
