@@ -24,8 +24,7 @@ from anomaly_detection import run_isolation_forest
 
 from anomaly_model_tester import load_model, generate_test_samples, test_model_on_samples
 from feature_engineering import process as feature_engineering_process
-from kmeans_clustering import run_kmeans_clustering
-from kmeans_grid_search import run_kmeans_grid_search
+
 from dbscan_clustering import run_dbscan_clustering
 from anomaly_detection_vs_dbscan import compare_dbscan_and_anomaly
 
