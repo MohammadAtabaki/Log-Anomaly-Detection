@@ -42,7 +42,7 @@ def run_isolation_forest(csv_path="output/task2_stopwatch_features.csv", contami
     joblib.dump(model, "output/isolation_forest_model.joblib")
 
     return df
-def plot_anomaly_scores(df):
+def plot_anomaly_scores(df,save_dir="output/figures"):
 
     # Plot and save figure
     plt.figure(figsize=(10, 6))
@@ -53,7 +53,8 @@ def plot_anomaly_scores(df):
     plt.ylabel("Anomaly Score (higher = more normal)")
     plt.axhline(y=0, color='black', linestyle='--', linewidth=1)
     plt.tight_layout()
-    plt.savefig("output/figures/anomaly_scores.png")
+    plt.savefig(f"{save_dir}/anomaly_scores.png")
+
     print("🖼️ Plot saved to output/anomaly_scores.png")
     plt.show()
 

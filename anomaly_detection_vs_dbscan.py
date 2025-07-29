@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import os
 
 def compare_dbscan_and_anomaly(csv_dbscan="output/dbscan_clustering_results.csv", 
-                               csv_anomaly="output/anomaly_results.csv"):
+                               csv_anomaly="output/anomaly_results.csv",output_dir="output"):
     """
     Compare DBSCAN and Isolation Forest anomaly detection results based on trace_id and stopwatch_name.
     Identifies the following:
@@ -107,8 +107,8 @@ def compare_dbscan_and_anomaly(csv_dbscan="output/dbscan_clustering_results.csv"
     print(f"Anomalies detected only by DBSCAN: {num_dbscan}")
 
     # Step 7: Save the comparison DataFrame to CSV
-    os.makedirs("output", exist_ok=True)
-    comparison_df.to_csv("output/dbscan_vs_isolation_forest_comparison.csv", index=False)
+    os.makedirs(output_dir, exist_ok=True)
+    comparison_df.to_csv(os.path.join(output_dir, "dbscan_vs_isolation_forest_comparison.csv"), index=False)
     print(f"✅ Comparison results saved to output/dbscan_vs_isolation_forest_comparison.csv")
 
     # Step 8: Plot comparison results
@@ -127,8 +127,8 @@ def compare_dbscan_and_anomaly(csv_dbscan="output/dbscan_clustering_results.csv"
     plt.tight_layout()
 
     # Save the comparison plot
-    os.makedirs("output/figures", exist_ok=True)
-    plt.savefig("output/figures/dbscan_vs_isolation_forest_comparison_plot.png")
+    os.makedirs(os.path.join(output_dir, "figures"), exist_ok=True)
+    plt.savefig(os.path.join(output_dir, "figures", "dbscan_vs_isolation_forest_comparison_plot.png"))
     print(f"🖼️ Comparison plot saved to output/figures/dbscan_vs_isolation_forest_comparison_plot.png")
 
     # Show the plot

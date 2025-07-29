@@ -59,7 +59,14 @@ def run_dbscan_clustering(csv_file="output/preprocessed_clustering_features.csv"
 
     # ✅ Step 8: Save the DBSCAN model 
     os.makedirs("output", exist_ok=True)
-    dbscan_info = {'eps': best_params['eps'], 'min_samples': best_params['min_samples'], 'labels': dbscan.labels_}
+    feature_columns = X.columns.tolist()
+    dbscan_info = {
+    'eps': best_params['eps'],
+    'min_samples': best_params['min_samples'],
+    'labels': dbscan.labels_,
+    'model': dbscan,
+    'feature_columns': feature_columns}
+
     joblib.dump(dbscan_info, "output/dbscan_model.joblib")
     print(f"✅ DBSCAN model saved to output/dbscan_model.joblib")
 
@@ -71,7 +78,7 @@ def run_dbscan_clustering(csv_file="output/preprocessed_clustering_features.csv"
     
 
     return df
-def plot_dbscan_clusters(df):
+def plot_dbscan_clusters(df,save_dir="output/figures"):
         
 
     # ✅ Step 9: Visualize the clusters (2D visualization)
@@ -103,7 +110,7 @@ def plot_dbscan_clusters(df):
 
     # Save the plot
     os.makedirs("output/figures", exist_ok=True)
-    plt.savefig("output/figures/dbscan_clustering_plot_with_pca.png")
+    plt.savefig(f"{save_dir}/dbscan_clustering_plot_with_pca.png")
     print(f"🖼️ Clustering plot saved to output/figures/dbscan_clustering_plot_with_pca.png")
 
     # Show the plot

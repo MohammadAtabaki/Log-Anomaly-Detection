@@ -1,5 +1,6 @@
 # Ignore analysis outputs
 output/
+test_result/
 
 # Ignore Python cache files and bytecode
 __pycache__/
@@ -29,4 +30,5 @@ Thumbs.db
 
 # Ignore figures and plots
 output/figures/
+test_result/figures/
 *.png

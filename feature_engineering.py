@@ -64,18 +64,18 @@ def save_preprocessed_data(df, output_path="output/preprocessed_clustering_featu
     print(f"✅ Preprocessed data saved to {output_path}")
 
 
-def process():
+def process(input_csv="output/task2_stopwatch_features.csv", output_csv="output/preprocessed_clustering_features.csv"):
     """
     Load, preprocess, and save the features.
     """
     # Load data
-    df = load_data()
+    df = load_data(input_csv)
 
     # Preprocess data
     df_preprocessed = preprocess_data(df)
 
     # Save the processed data
-    save_preprocessed_data(df_preprocessed)
+    save_preprocessed_data(df_preprocessed, output_path=output_csv)
 
 
 

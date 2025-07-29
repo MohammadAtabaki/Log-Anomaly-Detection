@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-def build_stopwatch_features(input_path="output/task2_stopwatch_details.csv"):
+def build_stopwatch_features(input_path="output/task2_stopwatch_details.csv" , output_csv="output/task2_stopwatch_features.csv"):
     """
     Build a feature table from stopwatch subtask breakdowns for anomaly detection.
     """
@@ -39,8 +39,11 @@ def build_stopwatch_features(input_path="output/task2_stopwatch_details.csv"):
     df_features = pd.DataFrame(feature_rows)
 
     # ✅  Save to output folder
-    os.makedirs("output", exist_ok=True)
-    df_features.to_csv("output/task2_stopwatch_features.csv", index=False)
-    print("✅ Feature table saved to output/task2_stopwatch_features.csv")
+    if output_csv is not None:
+        dir_name = os.path.dirname(output_csv)
+        if dir_name:
+            os.makedirs(dir_name, exist_ok=True)
+        df_features.to_csv(output_csv, index=False)
+        print(f"✅ Feature table saved to {output_csv}")
 
     return df_features

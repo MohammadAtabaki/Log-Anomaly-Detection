@@ -54,21 +54,21 @@ def main():
     df_task1_1 =analyze_execute_event_flat(df_logs_parsed)
     print("\n🔍 Task 1 Method 1 Preview:")
     print(df_task1_1.head())
-    save_result (df_task1_1, "task1_global_field_combination.csv")
+
     plot_execute_event_combinations(df_logs_parsed)
 
     print("\n📊 Running Hierarchy-aware analysis...")
     df_task1_2 = analyze_execute_event_hierarchy(df_logs_parsed)
     print("\n🔍 Task 1 Method 2 Preview:")
     print(df_task1_2.head())
-    save_result (df_task1_2, "task1_global_field_combination.csv")
+
 
     # ✅ Step 4: Run Task 2 - Stopwatch Performance Analysis
     print("\n⏱️ Running Task 2: Stopwatch Timing Breakdown...")
     df_task2 = extract_stopwatch_tasks(df_logs_parsed)
     print("\n🔍 Task 2 Preview:")
     print(df_task2.head())
-    save_result (df_task2, "task2_stopwatch_details.csv")
+
 
     plot_stopwatch_analysis(df_task2)
   
@@ -81,7 +81,7 @@ def main():
     print("\n🔎 Running EDA...")
     df_summarize = summarize_columns(df_logs_parsed)
     print(df_summarize.head())
-    save_result(df_summarize, "eda_column_summary.csv")
+
 
     columns_by_prefix = group_columns_by_prefix(df_logs_parsed)
     print("\n🔍 Columns grouped by JSON prefix:")
@@ -126,9 +126,11 @@ def main():
     print(results[['total_time_sec', 'max_subtask_percent', 'sum_other_subtask_time', 'ratio_other_to_max', 'prediction', 'anomaly_score']])
 
 
-    # ✅ Step 9: Feature Engineering for KMeans clustering
-    print("\n🔧 Running Feature Engineering for KMeans...")
-    feature_engineering_process()
+    # ✅ Step 9: Feature Engineering for DBSCAN clustering
+    print("\n🔧 Running Feature Engineering for DBSCAN...")
+    feature_engineering_process(
+    input_csv="output/task2_stopwatch_features.csv",
+    output_csv="output/preprocessed_clustering_features.csv")
 
     print("✅ Feature engineering completed and saved.")
 

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 
-def extract_stopwatch_tasks(df_logs_parsed):
+def extract_stopwatch_tasks(df_logs_parsed, output_csv="output/task2_stopwatch_details.csv"):
     """
     Extract stopwatch logs and return a structured DataFrame with:
     trace_id, stopwatch_name, total_time_sec, subtask, subtask_time_sec, subtask_percent
@@ -40,8 +40,11 @@ def extract_stopwatch_tasks(df_logs_parsed):
         except Exception:
             continue
 
-    return pd.DataFrame(stopwatch_records)
+    result_df = pd.DataFrame(stopwatch_records)
 
+    os.makedirs(os.path.dirname(output_csv), exist_ok=True)
+    result_df.to_csv(output_csv, index=False)
+    return result_df
 
 
 def plot_stopwatch_analysis(df_stopwatch_tasks, save_dir="output/figures"):

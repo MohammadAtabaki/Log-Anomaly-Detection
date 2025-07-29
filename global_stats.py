@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import math
 import os
 
-def analyze_execute_event_flat(df_logs_parsed):
+def analyze_execute_event_flat(df_logs_parsed, output_csv="output/task1_global_field_combination.csv"):
     """
     Extract and count combinations of [FileTypeID, EventID, FieldID, CommandID]
     from all columns in a flat way (regardless of hierarchy).
@@ -42,6 +42,9 @@ def analyze_execute_event_flat(df_logs_parsed):
         .reset_index(name='count')
         .sort_values(by='count', ascending=False)
     )
+
+    os.makedirs(os.path.dirname(output_csv), exist_ok=True)
+    df_grouped.to_csv(output_csv, index=False)
 
     return df_grouped
 
@@ -113,7 +116,7 @@ def plot_execute_event_combinations(df_logs_parsed, records_per_plot=20, save_di
         plt.close()
 
 
-def analyze_execute_event_hierarchy(df_logs_parsed):
+def analyze_execute_event_hierarchy(df_logs_parsed, output_csv="output/task1_hierarchy_field_combination.csv"):
     """
     Task 1 - Method 2:
     Count occurrences of CommandID, EventID, FieldID, and FileTypeID
@@ -145,5 +148,7 @@ def analyze_execute_event_hierarchy(df_logs_parsed):
         .reset_index(name='Count')
         .sort_values(by='Count', ascending=False)
     )
-
+    os.makedirs(os.path.dirname(output_csv), exist_ok=True)
+    df_summary.to_csv(output_csv, index=False)
+    
     return df_summary

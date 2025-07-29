@@ -6,13 +6,11 @@ from sklearn.feature_extraction.text import CountVectorizer
 import os
 
 
-# Ensure output folders exist
-def ensure_dir(path):
-    os.makedirs(path, exist_ok=True)
+
 
 
 # 1. Column Summary Stats (Top 30 Columns)
-def summarize_columns(df):
+def summarize_columns(df,output_csv="output/eda_column_summary.csv"):
     summary = pd.DataFrame({
         'Column': df.columns,
         'Non-Null Count': df.notnull().sum().values,
@@ -23,6 +21,8 @@ def summarize_columns(df):
             for col in df.columns
         ]
     })
+    os.makedirs(os.path.dirname(output_csv), exist_ok=True)
+    summary.to_csv(output_csv, index=False)
     return summary.sort_values('Null %').head(30)
 
 # 2. Grouping Columns by JSON Prefix
@@ -36,7 +36,6 @@ def group_columns_by_prefix(df):
 
 # 3. Log Volume Over Time
 def plot_log_volume_over_time(df, save_dir="output/figures"):
-    ensure_dir(save_dir)
 
     df_time = df.copy()
     ts_numeric = pd.to_numeric(df_time['timestamp_raw'], errors='coerce')
@@ -70,7 +69,7 @@ def plot_log_volume_over_time(df, save_dir="output/figures"):
 
 # 4. Status Fields and Logger Analysis
 def plot_status_and_loggers(df, save_dir="output/figures"):
-    ensure_dir(save_dir)
+ 
 
      # Detected levels
     plt.figure(figsize=(8, 4))
@@ -88,7 +87,7 @@ def plot_status_and_loggers(df, save_dir="output/figures"):
     plt.close()
 
 def extract_top_keywords(df, top_n=30, save_csv=True, save_dir="output"):
-    ensure_dir(save_dir)
+
 
     corpus = df['line.message'].dropna().astype(str).values
     vectorizer = CountVectorizer(stop_words='english', max_features=top_n)

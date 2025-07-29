@@ -10,6 +10,8 @@ This project performs structured analysis on JSON-based SQL Server logs to extra
 
 - `data/` – Raw JSON log files  
 - `output/` – Auto-generated analysis outputs (CSV, plots)  
+- `test_data/` – Place new log files here for testing the trained models  
+- `test_result/` – All outputs from the test pipeline are saved here  
 - `load_and_parse.py` – Module for loading and flattening JSON logs  
 - `preprocess.py` – Cleans and prepares logs for analysis  
 - `global_stats.py` – **Task 1**: Field count and hierarchy analysis  
@@ -23,6 +25,7 @@ This project performs structured analysis on JSON-based SQL Server logs to extra
 - `anomaly_detection_vs_dbscan.py` – Compares anomalies detected by DBSCAN clustering and Isolation Forest, providing a summary of overlap and unique detections  
 - `anomaly_model_tester.py` – Test the trained model based on the generated data  
 - `main.py` – Pipeline runner script  
+- `test_pipeline.py` – Script for running the pipeline on new logs using trained models  
 - `requirements.txt` – Python dependency list  
 - `.gitignore` – Files/folders to exclude from version control  
 
@@ -51,6 +54,29 @@ This project performs structured analysis on JSON-based SQL Server logs to extra
     ```bash
     python main.py
     ```
+
+---
+
+## 🆕 How to Test New Logs
+
+After you have trained your models with `main.py`, you can analyze new logs without retraining:
+
+1. **Place new log files** in the `test_data/` directory.
+
+2. **Run the test pipeline**:
+
+    ```bash
+    python test_pipeline.py
+    ```
+
+- The script will:
+    - Parse and clean the new logs
+    - Run all analysis and feature engineering steps
+    - Use the trained models (from the `output/` directory) to predict anomalies and clusters
+    - Save all results and plots in the `test_result/` directory
+    - Print a summary of anomalies detected by each model and their overlap
+
+**You do NOT need to retrain the models for new logs—just use the test pipeline!**
 
 ---
 
@@ -104,6 +130,26 @@ This project performs structured analysis on JSON-based SQL Server logs to extra
 
 ---
 
+## 🚨 Anomaly Detection
+
+### `task2_anomaly_features.py`
+- **Purpose:** Preprocesses stopwatch subtask breakdowns to build a feature table for anomaly detection.
+- **Preprocessing:** Extracts features such as `total_time_sec`, `max_subtask_percent`, `sum_other_subtask_time`, and `ratio_other_to_max` from the stopwatch details. This step is essential before running the anomaly detection model.
+
+### `anomaly_detection.py`
+- **Model:** Isolation Forest (unsupervised)
+- **Objective:** Detect anomalies based on the preprocessed stopwatch execution features (from `task2_anomaly_features.py`).
+- **Features Used:**
+  - `total_time_sec`
+  - `max_subtask_percent`
+  - `sum_other_subtask_time`
+  - `ratio_other_to_max`
+- **Outputs:**
+  - `output/anomaly_results.csv`: All logs with anomaly scores and predictions.
+  - `output/anomalies_detected.csv`: Only the detected anomalies.
+
+---
+
 ## 🧩 Feature Engineering & Clustering
 
 ### `feature_engineering.py`
@@ -120,19 +166,7 @@ This project performs structured analysis on JSON-based SQL Server logs to extra
 
 ---
 
-## 🚨 Anomaly Detection & Comparison
-
-### `anomaly_detection.py`
-- **Model:** Isolation Forest (unsupervised)
-- **Objective:** Detect anomalies based on stopwatch execution breakdowns (e.g., subtasks taking disproportionate time, anomalous task patterns)
-- **Features Used:**
-  - `total_time_sec`
-  - `max_subtask_percent`
-  - `sum_other_subtask_time`
-  - `ratio_other_to_max`
-- **Outputs:**
-  - `output/anomaly_results.csv`: All logs with anomaly scores and predictions.
-  - `output/anomalies_detected.csv`: Only the detected anomalies.
+## 🔄 Anomaly Comparison
 
 ### `anomaly_detection_vs_dbscan.py`
 - **Purpose:** Compares anomalies detected by DBSCAN clustering and Isolation Forest.
@@ -142,8 +176,7 @@ This project performs structured analysis on JSON-based SQL Server logs to extra
 - **Result & Outcome:**  
   - Prints the count of anomalies detected only by DBSCAN, only by Isolation Forest, and by both.
   - Saves a comparison CSV and a bar plot visualizing the results in `output/figures/dbscan_vs_isolation_forest_comparison_plot.png`.
-  - Example: If DBSCAN detects 19 anomalies and Isolation Forest detects 18, the comparison will show how many are unique to each and how many overlap.
-
+  - Example: If DBSCAN detects 19 anomalies and Isolation Forest detects 18, the comparison will show how many are unique to each and
 ---
 
 ## 📦 Output Files
@@ -152,6 +185,11 @@ Saved under the `output/` directory:
 - CSV results from each task
 - Plots for visual insights (PNG or displayed inline)
 - Model files (`.joblib`, `.pkl`)
+- Cluster and anomaly comparison results
+
+Saved under the `test_result/` directory:
+- CSV results from each task
+- Plots for visual insights (PNG or displayed inline)
 - Cluster and anomaly comparison results
 
 ---
