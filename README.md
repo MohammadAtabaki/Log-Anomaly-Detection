@@ -1,4 +1,4 @@
-# 🔍 Log Analysis Project
+# 🔍 Log Anomaly Detection
 
 This project performs structured analysis on JSON-based SQL Server logs to extract meaningful patterns, performance metrics, anomalies, and clusters using Python.
 
@@ -40,7 +40,7 @@ It was developed during my internship at **eResult** as a proof-of-concept for a
 1. **Clone the repository**:
 
     ```bash
-    git clone https://gitlab.internal.omniaplace.net/internship/data-analysis/log-analysis-project.git
+    git clone https://github.com/MohammadAtabaki/Log-Anomaly-Detection.git
     cd log-analysis_project
     ```
 
@@ -215,5 +215,6 @@ Install all dependencies using:
 ```bash
 pip install -r requirements.txt
 ```
+
 
 
