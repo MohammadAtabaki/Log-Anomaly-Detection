@@ -2,6 +2,10 @@
 
 This project performs structured analysis on JSON-based SQL Server logs to extract meaningful patterns, performance metrics, anomalies, and clusters using Python.
 
+This project is a **modular log anomaly detection pipeline** for analyzing structured and semi-structured system logs. It combines **feature engineering, clustering, and anomaly detection techniques** (such as Isolation Forest and DBSCAN) to identify unusual patterns in event traces.
+
+It was developed during my internship at **eResult** as a proof-of-concept for a **scalable, explainable, and data-driven workflow** in log analysis. The system is designed to be **local-first, transparent, and easily extendable** to new log formats and anomaly detection methods.
+
 ---
 
 ## 📁 Project Structure
